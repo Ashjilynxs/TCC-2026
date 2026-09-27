@@ -71,14 +71,104 @@
   border-radius: 50px;
 }
 
-.sair {
+.rodapeSidebar {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
   border-top: 1px solid #E2CAD2;
-  display: flex;
+  padding: 12px;
 }
 
-.sairIcon button{
-  color: red;
+.botaoSair {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+
   border: none;
-  outline: none;
-  background-color:#F8E8EE ;
+  background: transparent;
+
+  color: #E96778;
+  font-size: 13px;
+
+  cursor: pointer;
+  padding: 5px 0 15px 0;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-top: 10px;
+}
+
+.fotoUsuario {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 1px solid #9B72CF;
+}
+
+.dadosUsuario {
+  display: flex;
+  flex-direction: column;
+}
+
+.nomeUsuario {
+  color: #4A2D6B;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.tipoUsuario {
+  color: #9B72CF;
+  font-size: 9px;
+  margin-top: 2px;
+}
+.hamburguer {
+  display: none;
+}
+@media (max-width: 600px) {
+
+  .hamburguer {
+    display: block;
+
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 30px;
+    color: #4A2D6B;
+
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .sidebar {
+    position: fixed;
+
+    top: 0;
+    left: -300px;
+
+    width: 280px;
+    height: 100vh;
+
+    transition: left 0.3s ease;
+
+    z-index: 1000;
+  }
+
+  .sidebar.aberto {
+    left: 0;
+  }
 }

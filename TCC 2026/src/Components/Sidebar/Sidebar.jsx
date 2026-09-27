@@ -1,40 +1,104 @@
 import styles from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
-function Sidebar () {
-    return(
-<aside className={styles.sidebar}>
+import { useState } from "react";
 
-      <section className={styles.logo}>
-        <div className={styles.logoIcon}>
-          <Link to="/"><img src="/logoIR1.png" alt="Logo Instituto Recomeçar" /></Link>
-        </div>
+function Sidebar() {
+  const [menuAberto, setMenuAberto] = useState(false);
 
-        <div className={styles.logoTexto}>
-          Instituto
-          <span>Recomeçar</span>
-        </div>
-      </section>
+  return (
+    <>
+      <button
+        className={styles.hamburguer}
+        onClick={() => setMenuAberto(!menuAberto)}
+      >
+        <i className="bi bi-list"></i>
+      </button>
 
-      <nav className={styles.menu}>
-        <a href="#">Inicio</a>
-        <a href="#"><i class="bi bi-person-circle"></i> Perfil</a>
-        <a href="#"><i class="bi bi-box-seam"></i> Meus pedidos</a>
-        <a href="#"><i class="bi bi-people"></i> Quero ser voluntário</a>
-        <a href="#"><i class="bi bi-chat"></i> Mensagens</a>
-        <a href="#"><i class="bi bi-headphones"></i> Suporte</a>
-      </nav>
+      <aside
+        className={`${styles.sidebar} ${
+          menuAberto ? styles.aberto : ""
+        }`}
+      >
 
-      <section className={styles.sair}>
-        <div className={styles.sairIcon}>
-        <button> <i class="bi bi-box-arrow-left"></i> Sair</button>
-        <img src="#" alt="foto" />
-        </div>
-        <div className={styles.sairTexto}>
-            Nome
-        </div>
-      </section>
+        <section className={styles.logo}>
+          <div className={styles.logoIcon}>
+            <Link to="/">
+              <img
+                src="/logoIR1.png"
+                alt="Logo Instituto Recomeçar"
+              />
+            </Link>
+          </div>
 
-    </aside>
-    );
-    }
-    export default Sidebar
+          <div className={styles.logoTexto}>
+            Instituto
+            <span>Recomeçar</span>
+          </div>
+        </section>
+
+        <nav className={styles.menu}>
+          <Link to="/"><i class="bi bi-house-door"></i> Inicio</Link>
+
+          <a href="#">
+            <i className="bi bi-person-circle"></i> Perfil
+          </a>
+
+          <a href="#">
+            <i class="bi bi-cart"></i> Carrinho
+          </a>
+
+          <a href="#">
+            <i class="bi bi-cart-plus"></i> Catálogo
+          </a>
+
+          <a href="#">
+            <i className="bi bi-box-seam"></i> Meus pedidos
+          </a>
+
+          <a href="#">
+            <i className="bi bi-people"></i> Quero ser voluntário
+          </a>
+
+          <a href="#">
+            <i className="bi bi-chat"></i> Mensagens
+          </a>
+
+          <a href="#">
+            <i className="bi bi-headphones"></i> Suporte
+          </a>
+        </nav>
+<section className={styles.rodapeSidebar}>
+
+  <button className={styles.botaoSair}>
+    <i className="bi bi-box-arrow-left"></i>
+    Sair
+  </button>
+
+  <div className={styles.usuario}>
+
+    <img
+      src="/ana.jpg"
+      alt="Ana Paula"
+      className={styles.fotoUsuario}
+    />
+
+    <div className={styles.dadosUsuario}>
+      <span className={styles.nomeUsuario}>
+        Ana Paula
+      </span>
+
+      <span className={styles.tipoUsuario}>
+        Empreendedora
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+      </aside>
+    </>
+  );
+}
+
+export default Sidebar;
