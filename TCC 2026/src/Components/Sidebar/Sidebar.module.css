@@ -1,0 +1,84 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+ position: fixed;
+  background-color: #F8E8EE;
+  border-right: 1px solid #E2CAD2;
+}
+
+
+.logo {
+  height: 110px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 10px;
+  padding: 0 15px;
+
+  border-bottom: 1px solid #E8C8D5;
+}
+
+.logoIcon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.logoIcon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.logoTexto {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 13px;
+  font-weight: bold;
+  color: #40224F;
+}
+
+.logoTexto span {
+  color: #9B72CF;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px 12px;
+  gap: 8px;
+  ;
+}
+
+.menu a {
+  display: block;
+
+  padding: 10px 15px;
+
+  color: #6F4695;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover{
+  background-color: #9B72CF;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+
+.sair {
+  border-top: 1px solid #E2CAD2;
+  display: flex;
+}
+
+.sairIcon button{
+  color: red;
+  border: none;
+  outline: none;
+  background-color:#F8E8EE ;
+}
