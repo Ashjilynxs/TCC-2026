@@ -2,6 +2,7 @@ import styles from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+
 function Sidebar() {
   const [menuAberto, setMenuAberto] = useState(false);
 
@@ -39,9 +40,9 @@ function Sidebar() {
         <nav className={styles.menu}>
           <Link to="/"><i class="bi bi-house-door"></i> Inicio</Link>
 
-          <a href="#">
+          <Link to="/perfil">
             <i className="bi bi-person-circle"></i> Perfil
-          </a>
+          </Link>
 
           <a href="#">
             <i class="bi bi-cart"></i> Carrinho

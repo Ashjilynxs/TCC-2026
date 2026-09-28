@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
-
+import Perfil from "../Pages/Perfil/Perfil"
 
 function AppRoutes() {
   return (
@@ -9,6 +9,11 @@ function AppRoutes() {
       <Route
         path="/"
         element={<DashboardLogado />}
+      />
+
+      <Route
+        path="/perfil"
+        element={<Perfil />}
       />
       </Routes>
   );
