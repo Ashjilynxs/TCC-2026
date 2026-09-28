@@ -1,12 +1,14 @@
 .sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
   width: 200px;
   height: 100vh;
- position: fixed;
-  background-color: #F8E8EE;
+   background-color: #F8E8EE;
   border-right: 1px solid #E2CAD2;
 }
-
-
 .logo {
   height: 110px;
 

@@ -1,0 +1,133 @@
+.tudo{
+  margin-left: 400px;
+  padding-top: 50px;
+}
+
+.infoPerfil{
+    display: flex;
+  align-items: center;
+  width: 860px;
+ gap: 15px;
+ 
+}
+.salvarTudo{
+    display: inline-flex;
+  margin-left: auto;
+ 
+}
+.salvarTudo button{
+ background-color: #C990DD;
+ border: 1px solid #C990DD;
+ border-radius: 10px;
+ padding: 5px 10px;
+}
+.foto img{
+    display: inline-flex;
+    border: 1px solid #C990DD;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.abas {
+  display: flex;
+  gap: 30px;
+
+  width: 860px;
+
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.abas button {
+  position: relative;
+
+  background: none;
+  border: none;
+
+  padding: 12px 5px;
+
+  font-size: 15px;
+  color: #555;
+
+  cursor: pointer;
+}
+
+.abas button:hover {
+  color: #4f2385;
+}
+
+
+.abas .ativa {
+  color: #4f2385;
+  font-weight: bold;
+}
+
+.abas .ativa::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: #C990DD;
+
+  border-radius: 3px 3px 0 0;
+}
+
+
+.conteudo {
+margin-top: 50px;
+ display: flex;
+  width: 660px;
+  background-color: white;
+  border: 1px solid #E2CAD2;
+  border-radius: 10px;
+  padding: 20px;
+color:#4A2D6B ;
+flex-direction: column;
+}
+
+.conteudo h2 {
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  color: #4f2385;
+}
+
+.conteudo > div {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 500px;
+}
+
+.conteudo label {
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #4A2D6B;
+}
+
+.conteudo input {
+  margin-bottom: 20px;
+
+  padding: 10px 12px;
+background-color: #FBEFF3;
+  border: 1px solid #EAD7DD;
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.conteudo input:focus {
+  border-color: #C990DD;
+}
