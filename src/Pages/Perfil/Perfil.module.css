@@ -129,3 +129,98 @@ background-color: #FBEFF3;
 .conteudo input:focus {
   border-color: #C990DD;
 }
+@media (max-width: 1100px) {
+
+  .tudo {
+    margin-left: 280px;
+    padding-right: 30px;
+  }
+
+  .infoPerfil {
+    width: 100%;
+  }
+
+  .abas {
+    width: 100%;
+  }
+
+  .conteudo {
+    width: 100%;
+    max-width: 660px;
+    box-sizing: border-box;
+  }
+
+  .conteudo > div {
+    width: 100%;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .tudo {
+    margin-left: 0;
+    padding: 80px 20px 30px;
+  }
+
+  .infoPerfil {
+    width: 100%;
+  }
+
+  .foto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .foto img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .salvarTudo {
+    margin-left: auto;
+  }
+
+  .salvarTudo button {
+    white-space: nowrap;
+  }
+
+
+
+
+  .abas {
+    width: 100%;
+    margin-top: 20px;
+
+    overflow-x: auto;
+  }
+
+  .abas button {
+    white-space: nowrap;
+  }
+
+
+  /* FORMULÁRIO */
+
+  .conteudo {
+    width: 100%;
+
+    margin-top: 30px;
+
+    box-sizing: border-box;
+  }
+
+  .conteudo > div {
+    width: 100%;
+    max-width: none;
+  }
+
+  .conteudo input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}

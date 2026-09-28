@@ -44,9 +44,9 @@ function Sidebar() {
             <i className="bi bi-person-circle"></i> Perfil
           </Link>
 
-          <a href="#">
+          <Link to="/carrinho">
             <i class="bi bi-cart"></i> Carrinho
-          </a>
+          </Link>
 
           <a href="#">
             <i class="bi bi-cart-plus"></i> Catálogo

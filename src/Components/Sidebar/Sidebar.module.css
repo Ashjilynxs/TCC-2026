@@ -3,15 +3,15 @@
 
   top: 0;
   left: 0;
-
+border-right: 1px solid #E2CAD2;
   width: 200px;
   height: 100vh;
    background-color: #F8E8EE;
-  border-right: 1px solid #E2CAD2;
+  
 }
 .logo {
   height: 110px;
-
+  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,14 +23,14 @@
 }
 
 .logoIcon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   flex-shrink: 0;
 }
 
 .logoIcon img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 
@@ -53,7 +53,7 @@
 
   padding: 15px 12px;
   gap: 8px;
-  ;
+
 }
 
 .menu a {
@@ -77,7 +77,7 @@
   position: absolute;
   bottom: 0;
 
-  width: 100%;
+  width: 200px;
 
   border-top: 1px solid #E2CAD2;
   padding: 12px;
