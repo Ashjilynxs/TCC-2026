@@ -60,9 +60,9 @@ function Sidebar() {
             <i className="bi bi-people"></i> Quero ser voluntário
           </a>
 
-          <a href="#">
+          <Link to="/mensagens">
             <i className="bi bi-chat"></i> Mensagens
-          </a>
+          </Link>
 
           <a href="#">
             <i className="bi bi-headphones"></i> Suporte

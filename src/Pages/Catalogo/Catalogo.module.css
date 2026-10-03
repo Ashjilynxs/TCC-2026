@@ -201,3 +201,90 @@ display: flex;
 .btn:hover{
   background-color: #4A2D6B;
 }
+
+@media (max-width: 1024px) {
+
+  .linha1 {
+    margin-left: 250px;
+    margin-right: 20px;
+  }
+
+  .linha2 {
+    margin-left: 250px;
+    margin-right: 20px;
+  }
+
+  .searchBar {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .produtos {
+    margin-left: 250px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .linha1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+  }
+
+  .linha1 span {
+    font-size: 22px;
+  }
+
+  .linha1 h6 {
+    font-size: 13px;
+  }
+
+  .linha2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+
+    flex-direction: column;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .areaFiltro {
+    width: 100%;
+  }
+
+  .botaoFiltro {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filtros {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
+  .produtos {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

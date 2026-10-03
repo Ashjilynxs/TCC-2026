@@ -42,148 +42,7 @@ function DashboardLogado() {
   </div>
 
 </section>
-<section className={styles.favoritosRankingCatalogo}> 
-<section className={styles.favoritos}>
-  <div className={styles.linha1}>
-    <i className="bi bi-heart"></i> Favoritos
-    <div className={styles.verTodos}>
-    <Link to="/catalogo">Ver mais produtos <i class="bi bi-arrow-right"></i></Link>
-    </div>
-  
-  </div>
-
-  <div className={styles.linha2}>
-  <div className={styles.cardFavorito}>
-
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-
-  <div className={styles.cardFavorito}>
-
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-
-  <div className={styles.cardFavorito}>
-
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-
-  <div className={styles.cardFavorito}>
-
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-
-  <div className={styles.cardFavorito}>
-
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-</div>
-</section>
+<section className={styles.RankingCatalogo}> 
 
 <section className={styles.ranking}>
     <div className={styles.tituloRanking}>
@@ -310,38 +169,97 @@ function DashboardLogado() {
   <div className="row">
     <div className="col">
       
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Bordado floral</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div className={styles.card} >
+              <div className={styles.areaImg}>
+        <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
+      
+        <span className={styles.etiqueta}>
+            Beleza
+          </span>
+        </div>
+        <div className={styles.cardBody}>
+          <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
+          <div className={styles.cardText}>
+              <div className={styles.vendedoraNome}>
+                  <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
+                  </div>
+      
+                   <div className={styles.detalhesProdutos}>
+                        <span className={styles.preco}>R$ 145,00</span>
+                  
+                        <span className={styles.avaliacao}>
+                          <i className="bi bi-star-fill"></i> 5
+                        </span>
+                      </div>
+          </div>
+          <button className={styles.btn}>
+          <Link to="#">Adicionar ao carrinho</Link>
+          </button>
+        </div>
+      </div>
 
     </div>
     <div className="col">
       
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
+      <div className={styles.card} >
+              <div className={styles.areaImg}>
+        <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
+      
+        <span className={styles.etiqueta}>
+            Beleza
+          </span>
+        </div>
+        <div className={styles.cardBody}>
+          <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
+          <div className={styles.cardText}>
+              <div className={styles.vendedoraNome}>
+                  <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
+                  </div>
+      
+                   <div className={styles.detalhesProdutos}>
+                        <span className={styles.preco}>R$ 145,00</span>
+                  
+                        <span className={styles.avaliacao}>
+                          <i className="bi bi-star-fill"></i> 5
+                        </span>
+                      </div>
+          </div>
+          <button className={styles.btn}>
+          <Link to="#">Adicionar ao carrinho</Link>
+          </button>
+        </div>
+      </div>
     </div>
     <div className="col">
       
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div className={styles.card} >
+              <div className={styles.areaImg}>
+        <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
+      
+        <span className={styles.etiqueta}>
+            Beleza
+          </span>
+        </div>
+        <div className={styles.cardBody}>
+          <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
+          <div className={styles.cardText}>
+              <div className={styles.vendedoraNome}>
+                  <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
+                  </div>
+      
+                   <div className={styles.detalhesProdutos}>
+                        <span className={styles.preco}>R$ 145,00</span>
+                  
+                        <span className={styles.avaliacao}>
+                          <i className="bi bi-star-fill"></i> 5
+                        </span>
+                      </div>
+          </div>
+          <button className={styles.btn}>
+          <Link to="#">Adicionar ao carrinho</Link>
+          </button>
+        </div>
+      </div>
 
     </div>
     

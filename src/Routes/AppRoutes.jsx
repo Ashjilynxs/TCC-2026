@@ -4,6 +4,7 @@ import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
 import Perfil from "../Pages/Perfil/Perfil"
 import Carrinho from "../Pages/Carrinho/Carrinho"
 import Catalogo from "../Pages/Catalogo/Catalogo"
+import Mensagens from "../Pages/Mensagens/Mensagens";
 
 function AppRoutes() {
   return (
@@ -26,6 +27,11 @@ function AppRoutes() {
       <Route
         path="/catalogo"
         element={<Catalogo />}
+      />
+
+      <Route
+        path="/mensagens"
+        element={<Mensagens />}
       />
       </Routes>
   );
