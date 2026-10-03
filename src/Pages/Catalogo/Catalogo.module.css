@@ -1,0 +1,203 @@
+.main{
+display: flex;
+  width: 100%;
+}
+
+.linha1{
+    flex: 1;
+  margin-left: 400px;
+  margin-top: 50px;
+ display: flex;
+  flex-direction: column;
+}
+
+.linha1 span{
+    font-weight: bold;
+    font-size: 25px;
+    color: #4A2D6B;
+}
+
+.linha1 h6{
+    font-size: 15px;
+    color:#7A5A9A;
+}
+
+.linha2{
+  flex: 1;
+  margin-left: 400px;
+  margin-top: 50px;
+ display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.searchBar {
+  width: 800px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: white;
+  border: 1px solid #E2CAD2;
+  border-radius: 25px;
+
+  padding: 0 18px;
+}
+.searchBar input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 15px;
+  color: #4A2D6B;
+}
+
+.searchBar input::placeholder {
+  color: #A99AAF;
+}
+
+.searchBar i {
+  color: #7A5A9A;
+  font-size: 18px;
+}
+
+
+.areaFiltro {
+  position: relative;
+}
+
+.botaoFiltro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 30px;
+
+  border: 1px solid #7A5A9A;
+  border-radius: 20px;
+
+  background-color: white;
+  color: #7A5A9A;
+
+  cursor: pointer;
+}
+.botaoFiltro :hover{
+  background-color: #7A5A9A;
+  color: white;
+}
+.filtros {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  width: 220px;
+  padding: 15px;
+
+  background-color: white;
+  border: 1px solid #E2CAD2;
+  border-radius: 10px;
+
+  z-index: 10;
+}
+
+.filtros select {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #E2CAD2;
+  border-radius: 6px;
+}
+
+.produtos {
+  flex: 1;
+  margin-left: 200px;
+  margin-top: 50px;
+ display: flex;
+ 
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #E2CAD2;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.areaImg {
+  position: relative;
+}
+
+.card img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.cardBody {
+  text-align: left;
+  margin: 10px;
+}
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: #7A5A9A;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cardTitle{
+  font-size: 15px;
+  color:#4A2D6B;
+  font-weight: bold;
+  
+}
+
+.detalhesProdutos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.preco {
+  font-size: 15px;
+  color: #B46CD3;
+}
+
+.avaliacao {
+  font-size: 9px;
+  color: #C990DD;
+  margin-left: auto;
+}
+.vendedoraNome{
+  display: flex;
+  gap:5px;
+  
+}
+.vendedoraNome img{
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  display: block;
+  margin: 15px auto 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7A5A9A;
+  padding: 5px 20px;
+  background-color: #7A5A9A;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: #4A2D6B;
+}

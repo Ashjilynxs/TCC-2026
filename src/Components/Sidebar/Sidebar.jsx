@@ -48,9 +48,9 @@ function Sidebar() {
             <i class="bi bi-cart"></i> Carrinho
           </Link>
 
-          <a href="#">
+          <Link to="/catalogo">
             <i class="bi bi-cart-plus"></i> Catálogo
-          </a>
+          </Link>
 
           <a href="#">
             <i className="bi bi-box-seam"></i> Meus pedidos
@@ -86,10 +86,6 @@ function Sidebar() {
     <div className={styles.dadosUsuario}>
       <span className={styles.nomeUsuario}>
         Ana Paula
-      </span>
-
-      <span className={styles.tipoUsuario}>
-        Empreendedora
       </span>
     </div>
 

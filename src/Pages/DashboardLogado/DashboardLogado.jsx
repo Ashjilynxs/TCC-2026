@@ -11,11 +11,11 @@ function DashboardLogado() {
     <section className={styles.main}> 
     <div className={styles.areaCompras}>
       <div className={styles.texto}>
-        Bem-vinda!
+        Bem-vindo (a)!
         <span> Área de compras</span>
       </div>
       <div className={styles.button}>
-        <button className={styles.carrinho}><i className="bi bi-cart"></i> Carrinho</button>
+        <button className={styles.carrinho}><Link to="/carrinho"><i className="bi bi-cart"></i> Carrinho</Link></button>
         <button className={styles.empreender}>Começe a empreender</button>
       </div>
     </div>
@@ -47,7 +47,7 @@ function DashboardLogado() {
   <div className={styles.linha1}>
     <i className="bi bi-heart"></i> Favoritos
     <div className={styles.verTodos}>
-    <a href="#">Ver mais produtos <i class="bi bi-arrow-right"></i></a>
+    <Link to="/catalogo">Ver mais produtos <i class="bi bi-arrow-right"></i></Link>
     </div>
   
   </div>
@@ -303,7 +303,7 @@ function DashboardLogado() {
 
     <section className={styles.catalogo}>
       <div className={styles.tituloCatalogo}><i class="bi bi-cart-plus"></i> Catálogo
-      <div className={styles.verMais}>Ver mais <i class="bi bi-arrow-right"></i></div>
+      <div className={styles.verMais}><Link to="/catalogo">Ver mais <i class="bi bi-arrow-right"></i></Link></div>
 </div>
       <div className={styles.listaCatalogo}>
         <div className="container text-center">
