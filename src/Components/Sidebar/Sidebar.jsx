@@ -56,9 +56,9 @@ function Sidebar() {
             <i className="bi bi-box-seam"></i> Meus pedidos
           </a>
 
-          <a href="#">
+          <Link to="/qSvoluntario">
             <i className="bi bi-people"></i> Quero ser voluntário
-          </a>
+          </Link>
 
           <Link to="/mensagens">
             <i className="bi bi-chat"></i> Mensagens

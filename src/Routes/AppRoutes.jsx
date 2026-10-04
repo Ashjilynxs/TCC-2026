@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
 import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
-import Perfil from "../Pages/Perfil/Perfil"
-import Carrinho from "../Pages/Carrinho/Carrinho"
-import Catalogo from "../Pages/Catalogo/Catalogo"
+import Perfil from "../Pages/Perfil/Perfil";
+import Carrinho from "../Pages/Carrinho/Carrinho";
+import Catalogo from "../Pages/Catalogo/Catalogo";
 import Mensagens from "../Pages/Mensagens/Mensagens";
+import Cursos from "../Pages/Cursos/Cursos";
+import QueroSerVoluntario from "../Pages/QueroSerVoluntario/QueroSerVoluntario";
 
 function AppRoutes() {
   return (
@@ -32,6 +34,16 @@ function AppRoutes() {
       <Route
         path="/mensagens"
         element={<Mensagens />}
+      />
+
+      <Route
+        path="/cursos"
+        element={<Cursos />}
+      />
+
+      <Route
+        path="/qSvoluntario"
+        element={<QueroSerVoluntario />}
       />
       </Routes>
   );
