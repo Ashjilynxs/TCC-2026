@@ -4,16 +4,23 @@ import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
 import Perfil from "../Pages/Perfil/Perfil";
 import Carrinho from "../Pages/Carrinho/Carrinho";
 import Catalogo from "../Pages/Catalogo/Catalogo";
-import Mensagens from "../Pages/Mensagens/Mensagens";
+
 import Cursos from "../Pages/Cursos/Cursos";
 import QueroSerVoluntario from "../Pages/QueroSerVoluntario/QueroSerVoluntario";
 import MeusPedidos from "../Pages/Meus pedidos/MeusPedidos";
+import DashboardVendedora from "../Pages/DashboardVendedora/DashboardVendedora";
+
 function AppRoutes() {
   return (
     <Routes>
       <Route
         path="/"
         element={<DashboardLogado />}
+      />
+
+      <Route
+        path="/vendedora"
+        element={<DashboardVendedora />}
       />
 
       <Route
@@ -29,11 +36,6 @@ function AppRoutes() {
       <Route
         path="/catalogo"
         element={<Catalogo />}
-      />
-
-      <Route
-        path="/mensagens"
-        element={<Mensagens />}
       />
 
       <Route

@@ -1,9 +1,9 @@
-import styles from "./Sidebar.module.css";
+import styles from "./SidebarV.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
-function Sidebar() {
+function SidebarV() {
   const [menuAberto, setMenuAberto] = useState(false);
 
   return (
@@ -57,7 +57,15 @@ function Sidebar() {
           </Link>
 
           <Link to="/qSvoluntario">
-            <i className="bi bi-people"></i> Quero ser voluntário
+            <i className="bi bi-people"></i> Gerenciar loja
+          </Link>
+
+          <Link to="/cursos">
+            <i class="bi bi-book"></i> Cursos Profissionalizantes
+          </Link>
+
+          <Link to="/mensagens">
+            <i className="bi bi-chat"></i> Mensagens
           </Link>
 
           <a href="#">
@@ -94,4 +102,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SidebarV;

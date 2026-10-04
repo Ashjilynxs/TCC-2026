@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./MeusPedidos.module.css";
-import SideBar from "../../Components/SideBar/SideBar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 function MeusPedidos() {
   const [nota, setNota] = useState(0);
@@ -18,7 +18,7 @@ function MeusPedidos() {
 
   return (
     <>
-      <SideBar />
+      <Sidebar />
 
       <main className={styles.main}>
         <div className="d-flex mt-4">

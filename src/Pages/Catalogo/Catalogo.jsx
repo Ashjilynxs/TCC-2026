@@ -2,15 +2,18 @@ import styles from "./Catalogo.module.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { listaProdutos } from "../../shared/produtos";
+
 function Catalogo() {
 
   const [filtroAberto, setFiltroAberto] = useState(false);
 
+  const produtos = listaProdutos;
   return (
     <>
       <Sidebar />
 
-      <main>
+      <main className={styles.main}>
 
         <section className={styles.linha1}>
           <span>Catálogo</span>
@@ -67,205 +70,47 @@ function Catalogo() {
 
         </section>
         <section className={styles.produtos}>
-            <div className="container text-center">
-  <div className="row">
-    <div className="col">
+          <div className=" text-center">
+            <div className="row">
 
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
+              {produtos.map((produto) => (
+                <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                  <div className={styles.card} >
+                    <div className={styles.areaImg}>
+                      <img src="/sabonetes.jpg" className="card-img-top" alt="..." />
 
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
-            </div>
+                      <span className={styles.etiqueta}>
+                        {produto.etiqueta}
+                      </span>
+                    </div>
+                    <div className={styles.cardBody}>
+                      <h5 className={styles.cardTitle}>{produto.nome}</h5>
+                      <div className={styles.cardText}>
+                        <div className={styles.vendedoraNome}>
+                          <img src="/sabonetes.jpg" alt="." /><p>{produto.vendedor}</p>
+                        </div>
 
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
+                        <div className={styles.detalhesProdutos}>
+                          <span className={styles.preco}>R$ {produto.preco.toFixed(2)}</span>
+
+                          <span className={styles.avaliacao}>
+                            <i className="bi bi-star-fill"></i> {produto.avaliacao}
+                          </span>
+                        </div>
+                      </div>
+                      <button className={styles.btn}>
+                        <Link to="#">Adicionar ao carrinho</Link>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
+              )
+              )}
 
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
 
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
+
             </div>
-
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
-                </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
-
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
-
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
-            </div>
-
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
-                </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-  <div className="row">
-    <div className="col">
-
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
-
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
-            </div>
-
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
-                </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
-
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
-
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
-            </div>
-
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
-                </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
-
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} >
-        <div className={styles.areaImg}>
-  <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
-
-  <span className={styles.etiqueta}>
-      Beleza
-    </span>
-  </div>
-  <div className={styles.cardBody}>
-    <h5 className={styles.cardTitle}>Sabonetes artesanais</h5>
-    <div className={styles.cardText}>
-        <div className={styles.vendedoraNome}>
-            <img src="/sabonetes.jpg" alt="."/><p>Juliana Matos</p>
-            </div>
-
-             <div className={styles.detalhesProdutos}>
-                  <span className={styles.preco}>R$ 145,00</span>
-            
-                  <span className={styles.avaliacao}>
-                    <i className="bi bi-star-fill"></i> 5
-                  </span>
-                </div>
-    </div>
-    <button className={styles.btn}>
-    <Link to="#">Adicionar ao carrinho</Link>
-    </button>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
+          </div>
 
 
         </section>

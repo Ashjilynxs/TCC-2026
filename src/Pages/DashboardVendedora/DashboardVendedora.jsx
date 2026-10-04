@@ -1,13 +1,14 @@
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import SidebarV from "../../Components/SidebarV/SidebarV";
 import styles from "./DashboardVendedora.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { listaProdutos } from "../../shared/produtos";
 
 function DashboardVendedora() {
-  
+  const produtos = listaProdutos;
   return (
     <>
-    <Sidebar /> 
+    <SidebarV /> 
     <section className={styles.main}> 
     <div className={styles.areaCompras}>
       <div className={styles.texto}>
@@ -206,7 +207,7 @@ function DashboardVendedora() {
         <img src="/sabonetes.jpg" className="card-img-top" alt="..."/>
       
         <span className={styles.etiqueta}>
-            Beleza
+            {produto.etiqueta}
           </span>
         </div>
         <div className={styles.cardBody}>

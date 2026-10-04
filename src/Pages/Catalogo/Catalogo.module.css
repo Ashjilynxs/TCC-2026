@@ -1,11 +1,12 @@
 .main{
-display: flex;
-  width: 100%;
+margin-left: 200px;
+padding: 0 40px;
+  
 }
 
 .linha1{
     flex: 1;
-  margin-left: 400px;
+  
   margin-top: 50px;
  display: flex;
   flex-direction: column;
@@ -24,7 +25,7 @@ display: flex;
 
 .linha2{
   flex: 1;
-  margin-left: 400px;
+ 
   margin-top: 50px;
  display: flex;
   align-items: flex-start;
@@ -113,17 +114,16 @@ display: flex;
 
 .produtos {
   flex: 1;
-  margin-left: 200px;
   margin-top: 50px;
  display: flex;
  
 }
 
 .card {
-  width: 18rem;
   border: 1px solid #E2CAD2;
   border-radius: 10px;
   margin-bottom: 50px;
+  max-width: 450px;
 }
 
 .areaImg {
@@ -204,38 +204,60 @@ display: flex;
 
 @media (max-width: 1024px) {
 
-  .linha1 {
-    margin-left: 250px;
-    margin-right: 20px;
-  }
-
-  .linha2 {
-    margin-left: 250px;
-    margin-right: 20px;
-  }
-
   .searchBar {
     width: 100%;
     max-width: 600px;
   }
 
   .produtos {
-    margin-left: 250px;
-    margin-right: 20px;
+
+  
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  .card {
-    width: 45%;
-  }
+
 }
 
 @media (max-width: 768px) {
+.main {
+  margin-left: 0;
+  margin-top: 80px;
+  }
 
   .linha1 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .linha1 span {
+    font-size: 20px;
+  }
+
+  .linha1 h6 {
+    font-size: 12px;
+  }
+
+  .linha2 {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchBar {
+    width: 100%;
+    max-width: none;
+  }
+
+  .areaFiltro {
+    width: 100%;
+  }
+
+  .botaoFiltro {
+    width: 100%;
+    justify-content: center;
+}
+  .linha1 {
+   
     margin-top: 80px;
   }
 
@@ -248,8 +270,7 @@ display: flex;
   }
 
   .linha2 {
-    margin-left: 20px;
-    margin-right: 20px;
+    
     margin-top: 30px;
 
     flex-direction: column;
@@ -275,8 +296,7 @@ display: flex;
   }
 
   .produtos {
-    margin-left: 20px;
-    margin-right: 20px;
+    
     margin-top: 30px;
 
     flex-direction: column;

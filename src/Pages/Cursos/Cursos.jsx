@@ -5,6 +5,16 @@ function Cursos () {
     return(
         <>
         <Sidebar />
+
+        <main className={styles.main}>
+                    <div className="d-flex mt-4">
+                        <div className={styles.title}>
+                            <h1>Carrinho</h1>
+                    <h6>Confira os produtos que você adicionou ao carrinho</h6>
+
+                        </div>
+                        </div>
+                        </main>
         </>
     );
 }

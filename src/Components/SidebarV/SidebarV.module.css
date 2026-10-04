@@ -137,7 +137,7 @@ border-right: 1px solid #E2CAD2;
 .hamburguer {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .hamburguer {
     display: block;
