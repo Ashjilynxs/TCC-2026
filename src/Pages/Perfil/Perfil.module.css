@@ -125,7 +125,28 @@ background-color: #FBEFF3;
 
   outline: none;
 }
-
+.modalConteudo{
+  border:1px solid #EAD7DD;
+}
+.modalBody{
+  border-top:1px solid #EAD7DD;
+  border-bottom:1px solid #EAD7DD;
+}
+.btnSecondary{
+  background-color: #FBEFF3;
+  border: 1px solid #EAD7DD;
+  color: #4A2D6B;
+}
+.btnPrimary{
+  background-color: #C990DD;
+  border: 1px solid #C990DD;
+  color: #FBEFF3;
+}
+.btnPrimary:hover{
+  background-color: #B36DD9;
+  border: 1px solid #B36DD9;
+  color: #FBEFF3;
+}
 .conteudo input:focus {
   border-color: #C990DD;
 }

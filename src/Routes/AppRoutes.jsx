@@ -7,7 +7,7 @@ import Catalogo from "../Pages/Catalogo/Catalogo";
 import Mensagens from "../Pages/Mensagens/Mensagens";
 import Cursos from "../Pages/Cursos/Cursos";
 import QueroSerVoluntario from "../Pages/QueroSerVoluntario/QueroSerVoluntario";
-
+import MeusPedidos from "../Pages/Meus pedidos/MeusPedidos";
 function AppRoutes() {
   return (
     <Routes>
@@ -44,6 +44,10 @@ function AppRoutes() {
       <Route
         path="/qSvoluntario"
         element={<QueroSerVoluntario />}
+      />
+      <Route
+        path="/meusPedidos"
+        element={<MeusPedidos />}
       />
       </Routes>
   );

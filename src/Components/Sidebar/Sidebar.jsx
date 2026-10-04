@@ -52,9 +52,9 @@ function Sidebar() {
             <i class="bi bi-cart-plus"></i> Catálogo
           </Link>
 
-          <a href="#">
+          <Link to="/meusPedidos">
             <i className="bi bi-box-seam"></i> Meus pedidos
-          </a>
+          </Link>
 
           <Link to="/qSvoluntario">
             <i className="bi bi-people"></i> Quero ser voluntário
