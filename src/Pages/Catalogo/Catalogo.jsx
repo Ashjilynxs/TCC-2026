@@ -86,8 +86,9 @@ function Catalogo() {
                     <div className={styles.cardBody}>
                       <h5 className={styles.cardTitle}>{produto.nome}</h5>
                       <div className={styles.cardText}>
-                        <div className={styles.vendedoraNome}>
-                          <img src="/sabonetes.jpg" alt="." /><p>{produto.vendedor}</p>
+                        <div className={styles.vendedoraNome}><h5>{produto.vendedor}</h5>
+
+                          <img src="/sabonetes.jpg" alt="." />
                         </div>
 
                         <div className={styles.detalhesProdutos}>

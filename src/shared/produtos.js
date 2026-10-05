@@ -5,7 +5,8 @@ export const listaProdutos = [
       vendedora: "Juliana Matos",
       preco: 145.00,
       avaliacao: 5,
-      etiqueta: "Beleza"
+      etiqueta: "Beleza",
+      image: "/sabonetes.webp",
     },
     {
       id: 2,

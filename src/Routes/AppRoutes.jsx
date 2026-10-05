@@ -4,11 +4,11 @@ import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
 import Perfil from "../Pages/Perfil/Perfil";
 import Carrinho from "../Pages/Carrinho/Carrinho";
 import Catalogo from "../Pages/Catalogo/Catalogo";
-
 import Cursos from "../Pages/Cursos/Cursos";
 import QueroSerVoluntario from "../Pages/QueroSerVoluntario/QueroSerVoluntario";
 import MeusPedidos from "../Pages/Meus pedidos/MeusPedidos";
 import DashboardVendedora from "../Pages/DashboardVendedora/DashboardVendedora";
+import GerenciarLoja from "../Pages/GerenciarLoja/GerenciarLoja";
 
 function AppRoutes() {
   return (
@@ -50,6 +50,10 @@ function AppRoutes() {
       <Route
         path="/meusPedidos"
         element={<MeusPedidos />}
+      />
+      <Route
+        path="/gerenciarLoja"
+        element={<GerenciarLoja />}
       />
       </Routes>
   );

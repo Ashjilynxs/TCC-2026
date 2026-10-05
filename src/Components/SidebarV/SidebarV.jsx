@@ -23,7 +23,7 @@ function SidebarV() {
 
         <section className={styles.logo}>
           <div className={styles.logoIcon}>
-            <Link to="/">
+            <Link to="/vendedora">
               <img
                 src="/logoIR1.png"
                 alt="Logo Instituto Recomeçar"
@@ -38,7 +38,7 @@ function SidebarV() {
         </section>
 
         <nav className={styles.menu}>
-          <Link to="/"><i class="bi bi-house-door"></i> Inicio</Link>
+          <Link to="/vendedora"><i class="bi bi-house-door"></i> Inicio</Link>
 
           <Link to="/perfil">
             <i className="bi bi-person-circle"></i> Perfil
@@ -56,7 +56,7 @@ function SidebarV() {
             <i className="bi bi-box-seam"></i> Meus pedidos
           </Link>
 
-          <Link to="/qSvoluntario">
+          <Link to="/gerenciarLoja">
             <i className="bi bi-people"></i> Gerenciar loja
           </Link>
 
@@ -68,9 +68,13 @@ function SidebarV() {
             <i className="bi bi-chat"></i> Mensagens
           </Link>
 
-          <a href="#">
+          <Link to="">
+            <i class="bi bi-calendar"></i> Agenda de consultas
+          </Link>
+
+          <Link to="">
             <i className="bi bi-headphones"></i> Suporte
-          </a>
+          </Link>
         </nav>
 <section className={styles.rodapeSidebar}>
 
@@ -83,13 +87,13 @@ function SidebarV() {
 
     <img
       src="/ana.jpg"
-      alt="Ana Paula"
+      alt="Juliana Matos"
       className={styles.fotoUsuario}
     />
 
     <div className={styles.dadosUsuario}>
       <span className={styles.nomeUsuario}>
-        Ana Paula
+        Juliana Matos
       </span>
     </div>
 
