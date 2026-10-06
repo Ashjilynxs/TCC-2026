@@ -12,7 +12,7 @@ function Footer() {
         <div className={style.linksArea}>
           <div className={style.column}>
             <h3>Navegação</h3>
-            <a href="/Inicial">Início</a>
+            <a href="/">Início</a>
             <a href="/Sobre">Sobre nós</a>
           </div>
         </div>
