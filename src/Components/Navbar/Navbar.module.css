@@ -1,6 +1,9 @@
 .navbar {
   background-color: #FBEFF3;
   border-bottom: 1px solid #E2CAD2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -60,16 +63,16 @@
 }
 
 .btnCadastro {
-  background-color: #7A5A9A ;
+  background-color: #7A5A9A;
   color: white;
   text-decoration: none;
-  padding: 5px 15px;
-  border-radius: 8px;
+  padding: 10px 15px;
+  border-radius: 18px;
   transition: 0.3s;
 }
 
 .btnCadastro:hover {
-  background-color: #4A2D6B ;
+  background-color: #4A2D6B;
   color: white;
 }
 
@@ -84,7 +87,7 @@
     border-top: 1px solid #E2CAD2;
     display: none !important;
     width: 100%;
-   
+
   }
 
   .menu:global(.show) {
@@ -99,14 +102,15 @@
     padding-top: 20px;
   }
 
- .btnCadastro { 
-color: #4A2D6B;
-  text-decoration: none;
-  background-color: #FBEFF3;
-  padding:10px;
- }
- .btnCadastro:hover {
-  background-color: #FBEFF3;
-  color: #4A2D6B;
-}
+  .btnCadastro {
+    color: #4A2D6B;
+    text-decoration: none;
+    background-color: #FBEFF3;
+    padding: 10px;
+  }
+
+  .btnCadastro:hover {
+    background-color: #FBEFF3;
+    color: #4A2D6B;
+  }
 }

@@ -1,82 +1,116 @@
 .footer {
-  background-color: #E8C5D0;
-  color: #c4c4cc;
-  padding: 3rem 2rem 1.5rem 2rem;
-  border-top: 1px solid #9B72CF;
-  font-family: sans-serif;
+  background-color: #E4BCC9;
+  color: #40224F;
+  padding: 3rem 2rem 1.5rem;
+  border-top: 1px solid #4A2D6B;
+
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
+
+}
+
+.logoSection {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: column;
+  justify-content: justify;
+  gap: 10px;
 }
 
-.logoArea {
-  max-width: 300px;
-  color: #875DBF;
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
 }
 
-.logoArea h2 {
+.logoIcon {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.logoIcon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.logoTexto {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 13px;
+  font-weight: bold;
+  color: #40224F;
+}
+
+.logoTexto span {
   color: #9B72CF;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
-.logoArea p {
-  font-size: 0.9rem;
-  line-height: 1.6;
+.logoDescricao {
+  display: flex;
+  flex-direction: column;
 }
 
 .linksArea {
   display: flex;
-  gap: 4rem;
+  justify-content: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
 }
 
 .column h3 {
-  color: #7A5AB0;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: #40224F;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
 }
 
-.column a {
-  color: #C9A0DC;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+.faleConosco {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-.column a:hover {
-  color: #7A5AB0;
+.faleConosco h6 {
+  font-size: 15px;
+}
+
+.faleConosco span {
+  font-size: 13px;
+  opacity: 0.8;
 }
 
 .bottomBar {
-  max-width: 1100px;
-  margin: 2.5rem auto 0 auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid #7A5AB0;
   text-align: center;
-  font-size: 0.8rem;
-  color: #7A5AB0;
+  color: #4A2D6B;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+
+  .footer {
+    padding: 2rem 1rem;
   }
+
+  .logo {
+    justify-content: center;
+
+    margin-bottom: 25px;
+  }
+
   .linksArea {
-    gap: 2rem;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
+
 }
