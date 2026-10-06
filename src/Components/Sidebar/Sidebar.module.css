@@ -40,11 +40,11 @@ border-right: 1px solid #E2CAD2;
 
   font-size: 13px;
   font-weight: bold;
-  color: #40224F;
+  color: #4A2D6B;
 }
 
 .logoTexto span {
-  color: #9B72CF;
+  color: #7A5A9A;
 }
 
 .menu {
@@ -61,13 +61,13 @@ border-right: 1px solid #E2CAD2;
 
   padding: 10px 15px;
 
-  color: #6F4695;
+  color: #4A2D6B;
   text-decoration: none;
   font-size: 14px;
 }
 
 .menu a:hover{
-  background-color: #9B72CF;
+  background-color: #7A5A9A;
   color: white;
   padding: 10px 10px;
   border-radius: 50px;
@@ -115,7 +115,7 @@ border-right: 1px solid #E2CAD2;
   border-radius: 50%;
   object-fit: cover;
 
-  border: 1px solid #9B72CF;
+  border: 1px solid #7A5A9A;
 }
 
 .dadosUsuario {
@@ -130,7 +130,7 @@ border-right: 1px solid #E2CAD2;
 }
 
 .tipoUsuario {
-  color: #9B72CF;
+  color: #7A5A9A;
   font-size: 9px;
   margin-top: 2px;
 }
@@ -141,32 +141,24 @@ border-right: 1px solid #E2CAD2;
 
   .hamburguer {
     display: block;
-
     position: fixed;
     top: 15px;
     left: 15px;
-
     background: transparent;
     border: none;
-
     font-size: 30px;
     color: #4A2D6B;
-
     cursor: pointer;
     z-index: 1001;
   }
 
   .sidebar {
     position: fixed;
-
     top: 0;
     left: -300px;
-
     width: 280px;
     height: 100vh;
-
     transition: left 0.3s ease;
-
     z-index: 1000;
   }
 

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+import Dashboard from "../Pages/Dashboard/Dashboard";
 import DashboardLogado from "../Pages/DashboardLogado/DashboardLogado";
 import Perfil from "../Pages/Perfil/Perfil";
 import Carrinho from "../Pages/Carrinho/Carrinho";
@@ -15,6 +16,10 @@ function AppRoutes() {
     <Routes>
       <Route
         path="/"
+        element={<Dashboard />}
+      />
+      <Route
+        path="/Logado"
         element={<DashboardLogado />}
       />
 
