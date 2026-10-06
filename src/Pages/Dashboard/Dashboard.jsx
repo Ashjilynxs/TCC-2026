@@ -1,6 +1,7 @@
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import styles from "./Dashboard.module.css";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
     return (
@@ -8,73 +9,76 @@ function Dashboard() {
             <Navbar />
             <div className={styles.container}>
                 <section className={styles.hero}>
-                    <h1>Empreendedorismo Feminino com Apoio e Oportunidades</h1>
+                    <div className={styles.heroTitle}>
+                        <h1>Seu novo <span>começo</span> está aqui!</h1>
+                    </div>
 
                     <p>
-                        Uma plataforma desenvolvida para conectar mulheres empreendedoras a
-                        oportunidades de venda, capacitação profissional e apoio psicológico.
+                        O Instituto Recomeçar é um espaço seguro onde mulheres encontram formação profissional, apoio psicológico e uma comunidade solidária para construir sua independência.
                     </p>
 
                     <button className={styles.botao}>
-                        Criar Conta
+                        <Link to="/cadastrar">Crie sua conta agora <i class="bi bi-arrow-right"></i></Link>
+
                     </button>
                 </section>
 
                 <section className={styles.destaques}>
-                    <h2>Recursos da Plataforma</h2>
+                    <div className="container text-center">
+                        <div className="row">
+                            <div className="col">
 
-                    <div className={styles.cards}>
-                        <div className={styles.card}>
-                            <h3>Marketplace</h3>
-                            <p>
-                                Cadastre seus produtos, gerencie pedidos e amplie suas vendas.
-                            </p>
-                        </div>
+                                <div className={styles.card}>
+                                    <div className="card-body">
+                                        <div className={styles.cardIcon}><i class="bi bi-suitcase-lg"></i></div>
+                                        <h3 className="card-title">Empreendedoras</h3>
+                                        <p className="card-text">
+                                            <ul>
+                                                <li>Cursos Profissionalizantes</li>
+                                                <li>Local especifico para vendas</li>
+                                                <li>Apoio Psicológico</li>
+                                            </ul>
+                                        </p>
 
-                        <div className={styles.card}>
-                            <h3>Cursos Profissionalizantes</h3>
-                            <p>
-                                Tenha acesso a cursos oferecidos por empresas parceiras para o
-                                desenvolvimento profissional.
-                            </p>
-                        </div>
+                                    </div>
+                                </div>
 
-                        <div className={styles.card}>
-                            <h3>Apoio Psicológico</h3>
-                            <p>
-                                Agende atendimentos com psicólogos voluntários e acompanhe sua
-                                evolução.
-                            </p>
+                            </div>
+                            <div className="col">
+
+                                <div className={styles.card}>
+                                    <div className="card-body">
+                                        <div className={styles.cardIcon}><i class="bi bi-file-earmark-medical"></i></div>
+                                        <h3 className="card-title">Psicólogos</h3>
+                                        <p className="card-text">
+                                            Ofereça seu trabalho para transformar vidas. Acreditamos que acolhimento e escuta podem transformar trajetórias. Como psicólogo voluntário, você poderá dedicar parte do seu tempo para apoiar mulheres em busca de fortalecimento emocional, autonomia e novas oportunidades.
+
+
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="col">
+
+                                <div className={styles.card}>
+                                    <div className="card-body">
+                                        <div className={styles.cardIcon}><i class="bi bi-buildings"></i></div>
+                                        <h3 className="card-title">Empresas</h3>
+                                        <p className="card-text">Ao oferecer cursos e capacitações por meio do Instituto Recomeçar, sua empresa contribui para o desenvolvimento profissional de mulheres que buscam mais autonomia, novas oportunidades e espaço no mercado de trabalho.</p>
+                                        <button className={styles.botao}><Link to="/parceiros" className="card-link">Torne-se parceiro</Link></button>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section className={styles.destaques}>
-                    <h2>Por que utilizar a plataforma?</h2>
-
-                    <div className={styles.cards}>
-                        <div className={styles.card}>
-                            <h3>Capacitação</h3>
-                            <p>
-                                Desenvolva habilidades para fortalecer seu negócio.
-                            </p>
-                        </div>
-
-                        <div className={styles.card}>
-                            <h3>Comunidade</h3>
-                            <p>
-                                Conecte-se com outras mulheres empreendedoras e compartilhe
-                                experiências.
-                            </p>
-                        </div>
-
-                        <div className={styles.card}>
-                            <h3>Oportunidades</h3>
-                            <p>
-                                Divulgue seus produtos e alcance novos clientes.
-                            </p>
-                        </div>
-                    </div>
+                <section className={styles.parceiros}>
+                    
                 </section>
             </div>
             <Footer />
