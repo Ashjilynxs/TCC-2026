@@ -38,7 +38,7 @@ function Footer() {
                 <div className={styles.column}>
                   <h3>Navegação</h3>
                   <Link to="/">Início</Link>
-                  <Link to="/Sobre">Sobre nós</Link>
+                  <Link to="/sobre">Sobre nós</Link>
                   <Link to="/parceiro">Vire nosso parceiro</Link>
                 </div>
               </div>

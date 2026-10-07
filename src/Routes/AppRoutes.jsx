@@ -10,6 +10,8 @@ import QueroSerVoluntario from "../Pages/QueroSerVoluntario/QueroSerVoluntario";
 import MeusPedidos from "../Pages/Meus pedidos/MeusPedidos";
 import DashboardVendedora from "../Pages/DashboardVendedora/DashboardVendedora";
 import GerenciarLoja from "../Pages/GerenciarLoja/GerenciarLoja";
+import Sobre from "../Pages/Sobre nós/Sobre";
+import Login from "../Pages/Login/Login";
 
 function AppRoutes() {
   return (
@@ -59,6 +61,14 @@ function AppRoutes() {
       <Route
         path="/gerenciarLoja"
         element={<GerenciarLoja />}
+      />
+      <Route
+      path="/sobre"
+      element={<Sobre />}
+      />
+      <Route
+      path="/login"
+      element={<Login />}
       />
       </Routes>
   );
