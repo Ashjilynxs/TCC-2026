@@ -120,7 +120,7 @@ function Dashboard() {
                                             OBS: Para participar do programa de voluntariado e disponibilizar seus atendimentos, é necessário possuir uma conta e estar logado na plataforma.
                                         </p>
                                         <Link
-                                            to="/parceiros"
+                                            to="/cadastrar"
                                             className={styles.btnParceiros}
                                         >
                                             Entrar para ser voluntário

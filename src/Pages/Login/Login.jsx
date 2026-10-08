@@ -37,15 +37,13 @@ function Login() {
                                 <input
                                     type={mostrarSenha ? "text" : "password"}
                                     placeholder="Digite sua senha"
-                                    className={styles.input}
-                                />
+                                    className={styles.input}/>
 
                                 <button
                                     type="button"
                                     className={styles.botaoOlho}
                                     onClick={() => setMostrarSenha(!mostrarSenha)}
-                                    aria-label={mostrarSenha ? "Ocultar senha" : "Mostrar senha"}
-                                >
+                                    aria-label={mostrarSenha ? "Ocultar senha" : "Mostrar senha"}>
                                     <i className={`bi ${mostrarSenha ? "bi-eye-slash" : "bi-eye"}`}></i>
                                 </button>
                             </div>

@@ -141,3 +141,8 @@ h6 {
 .cadastrar:hover {
     color: #4A2D6B;
 }
+.erroSenha {
+  color: #D32F2F;
+  font-size: 13px;
+  margin-top: 5px;
+}
