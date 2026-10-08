@@ -49,7 +49,7 @@ function Login() {
                             </div>
                         </div>
                         <div className={styles.esqueci}>
-                            <Link to="">Esqueceu a senha?</Link>
+                            <Link to="/esquecerSenha">Esqueceu a senha?</Link>
                         </div>
 
                     </div>
@@ -66,7 +66,7 @@ function Login() {
                             Continuar com Google
                         </button>
                        
-                            <Link to="" className={styles.cadastrar}>Não tem conta? Cadastre-se</Link>
+                            <Link to="/cadastrar" className={styles.cadastrar}>Não tem conta? Cadastre-se</Link>
                    
                     </div>
                 </div>

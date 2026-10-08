@@ -12,6 +12,7 @@ import DashboardVendedora from "../Pages/DashboardVendedora/DashboardVendedora";
 import GerenciarLoja from "../Pages/GerenciarLoja/GerenciarLoja";
 import Login from "../Pages/Login/Login";
 import Cadastrar from "../Pages/Cadastre-se/Cadastrar";
+import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
 
 function AppRoutes() {
   return (
@@ -69,6 +70,10 @@ function AppRoutes() {
       <Route
         path="/cadastrar"
         element={<Cadastrar />}
+      />
+      <Route
+        path="/esquecerSenha"
+        element={<RecuperarSenha />}
       />
       </Routes>
   );
