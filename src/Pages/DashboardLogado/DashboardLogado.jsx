@@ -1,8 +1,6 @@
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import styles from "./DashboardLogado.module.css";
-import Carrinho from "../Carrinho/Carrinho"
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { listaProdutos } from "../../shared/produtos";
 
 function DashboardLogado() {

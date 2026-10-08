@@ -120,7 +120,7 @@ function Dashboard() {
                                             OBS: Para participar do programa de voluntariado e disponibilizar seus atendimentos, é necessário possuir uma conta e estar logado na plataforma.
                                         </p>
                                         <Link
-                                            to="/cadastrar"
+                                            to="/psicologo"
                                             className={styles.btnParceiros}
                                         >
                                             Entrar para ser voluntário
@@ -146,12 +146,10 @@ function Dashboard() {
                                             cursos profissionalizantes, mentorias técnicas ou apoio financeiro
                                             direto para nossos programas de capacitação.
                                         </p>
-                                        <Link
-                                            to="/parceiros"
+                                        <a
+                                            href="mailto:instituto.recomecar2026@gmail.com"
                                             className={styles.btnParceiros}
-                                        >
-                                            Entrar em contato para parceria
-                                        </Link>
+                                        > Entrar em contato para parceria </a>
                                     </div>
                                 </section>
                             </div>

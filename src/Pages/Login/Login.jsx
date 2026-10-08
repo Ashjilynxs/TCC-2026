@@ -55,7 +55,7 @@ function Login() {
                     </div>
 
                     <div className={styles.botao}>
-                        <button className={styles.entrar}>Entrar</button>
+                        <button className={styles.entrar}><Link to="/Logado">Entrar</Link></button>
                         <button
                             type="button"
                             className={styles.btnGoogle}

@@ -9,7 +9,6 @@ function QueroSerVoluntario() {
     <>
       <Sidebar />
 
-      {/* BANNER */}
       <main className={styles.banner}>
         <h2>Portal do voluntário</h2>
 
@@ -20,15 +19,11 @@ function QueroSerVoluntario() {
         </p>
       </main>
 
-      {/* CONTEÚDO */}
       <section className={styles.beneficios}>
         <div className="container mt-5">
 
           <div className="row g-5">
 
-            {/* =========================
-                COLUNA ESQUERDA
-            ========================== */}
             <div className="col-md-5">
 
               <h3>Por que ser voluntária?</h3>
@@ -62,40 +57,23 @@ function QueroSerVoluntario() {
 
             </div>
 
-
-            {/* =========================
-                COLUNA DIREITA
-            ========================== */}
             <div className="col-md-7">
 
               <div className={styles.formulario}>
-
-                {/* INDICADOR DAS ETAPAS */}
                 <div className={styles.etapas}>
-
                   <div className={styles.etapa}>
                     <span
-                      className={
-                        etapa === 1 ? styles.ativa : ""
-                      }
-                    >
-                      1
+                      className={etapa === 1 ? styles.ativa : ""}>
+                        1
                     </span>
-
                     <p>Dados Pessoais</p>
                   </div>
-
                   <i className="bi bi-chevron-right"></i>
-
                   <div className={styles.etapa}>
                     <span
-                      className={
-                        etapa === 2 ? styles.ativa : ""
-                      }
-                    >
+                      className={etapa === 2 ? styles.ativa : "" }>
                       2
                     </span>
-
                     <p>Credenciais</p>
                   </div>
 
@@ -103,22 +81,13 @@ function QueroSerVoluntario() {
 
                   <div className={styles.etapa}>
                     <span
-                      className={
-                        etapa === 3 ? styles.ativa : ""
-                      }
-                    >
+                      className={ etapa === 3 ? styles.ativa : ""}>
                       3
                     </span>
-
                     <p>Disponibilidade</p>
                   </div>
 
                 </div>
-
-
-                {/* =========================
-                    ETAPA 1
-                ========================== */}
 
                 {etapa === 1 && (
                   <div>
@@ -126,7 +95,7 @@ function QueroSerVoluntario() {
                     <h3>Dados Pessoais</h3>
 
                     <p className={styles.subtitulo}>
-                      Informações básicas para seu cadastro
+                      Informações básicas para seu cadastro.
                     </p>
 
                     <div className={styles.campos}>
@@ -190,11 +159,6 @@ function QueroSerVoluntario() {
 
                   </div>
                 )}
-
-
-                {/* =========================
-                    ETAPA 2
-                ========================== */}
 
                 {etapa === 2 && (
                   <div>
@@ -269,11 +233,6 @@ function QueroSerVoluntario() {
 
                   </div>
                 )}
-
-
-                {/* =========================
-                    ETAPA 3
-                ========================== */}
 
                 {etapa === 3 && (
                   <div>

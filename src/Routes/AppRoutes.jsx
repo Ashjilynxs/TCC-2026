@@ -13,6 +13,7 @@ import GerenciarLoja from "../Pages/GerenciarLoja/GerenciarLoja";
 import Login from "../Pages/Login/Login";
 import Cadastrar from "../Pages/Cadastre-se/Cadastrar";
 import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
+import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
 
 function AppRoutes() {
   return (
@@ -32,6 +33,11 @@ function AppRoutes() {
       />
 
       <Route
+        path="/psicologo"
+        element={<DashboardPsi />}
+      />
+
+      <Route
         path="/perfil"
         element={<Perfil />}
       />
@@ -40,7 +46,7 @@ function AppRoutes() {
         path="/carrinho"
         element={<Carrinho />}
       />
-      
+
       <Route
         path="/catalogo"
         element={<Catalogo />}
@@ -64,8 +70,8 @@ function AppRoutes() {
         element={<GerenciarLoja />}
       />
       <Route
-      path="/login"
-      element={<Login />}
+        path="/login"
+        element={<Login />}
       />
       <Route
         path="/cadastrar"
@@ -75,7 +81,7 @@ function AppRoutes() {
         path="/esquecerSenha"
         element={<RecuperarSenha />}
       />
-      </Routes>
+    </Routes>
   );
 }
 
