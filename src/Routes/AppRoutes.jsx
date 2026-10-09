@@ -14,7 +14,8 @@ import Login from "../Pages/Login/Login";
 import Cadastrar from "../Pages/Cadastre-se/Cadastrar";
 import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
 import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
-import Suporte from "../Pages/Suporte/Suporte"
+import Suporte from "../Pages/Suporte/Suporte";
+import Sobre_nos from "../Pages/Sobre_nos/Sobre_nos";
 
 function AppRoutes() {
   return (
@@ -86,6 +87,10 @@ function AppRoutes() {
         path="/suporte"
         element={<Suporte />}
       />
+      <Route
+          path="/sobre_nos"
+          element={<Sobre_nos />}
+        />
     </Routes>
   );
 }
