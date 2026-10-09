@@ -59,7 +59,7 @@ function Sidebar() {
           <Link to="/qSvoluntario">
             <i className="bi bi-people"></i> Quero ser voluntário
           </Link>
-
+          
           <a href="#">
             <i className="bi bi-headphones"></i> Suporte
           </a>

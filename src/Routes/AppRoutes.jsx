@@ -15,6 +15,7 @@ import Cadastrar from "../Pages/Cadastre-se/Cadastrar";
 import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
 import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
 
+
 function AppRoutes() {
   return (
     <Routes>

@@ -63,11 +63,7 @@ function SidebarV() {
           <Link to="/cursos">
             <i class="bi bi-book"></i> Cursos Profissionalizantes
           </Link>
-
-          <Link to="/mensagens">
-            <i className="bi bi-chat"></i> Mensagens
-          </Link>
-
+          
           <Link to="">
             <i class="bi bi-calendar"></i> Agenda de consultas
           </Link>
