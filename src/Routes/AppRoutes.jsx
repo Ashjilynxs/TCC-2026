@@ -17,6 +17,7 @@ import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
 import Suporte from "../Pages/Suporte/Suporte";
 import Sobre_nos from "../Pages/Sobre_nos/Sobre_nos";
 import Agenda_psicologo from "../Pages/Agenda_psicologo/Agenda_psicologo";
+import { DashboardADM } from "../Pages/DashboardADM/DashboardADM";
 
 function AppRoutes() {
   return (
@@ -95,6 +96,10 @@ function AppRoutes() {
       <Route
         path="/agenda_psicologo"
         element={<Agenda_psicologo />}
+      />
+      <Route
+        path="/adm"
+        element={<DashboardADM />}
       />
     </Routes>
   );

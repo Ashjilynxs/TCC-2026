@@ -63,7 +63,8 @@ function Login() {
                                 window.location.href =
                                     "http://localhost:8080/oauth2/authorization/google";}}>
                             <i className="bi bi-google"></i>
-                            Continuar com Google
+                            <Link to="/adm">
+                            Continuar com Google</Link>
                         </button>
                        
                             <Link to="/cadastrar" className={styles.cadastrar}>Não tem conta? Cadastre-se</Link>

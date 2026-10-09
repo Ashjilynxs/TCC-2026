@@ -1,0 +1,147 @@
+.sidebarAdm {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+    background: #ffffff;
+    border-right: 1px solid #ead9e2;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 8px 25px;
+    border-bottom: 1px solid #f0e4e9;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo strong {
+    display: block;
+    color: #4a2370;
+    font-size: 15px;
+}
+
+.logo span {
+    display: block;
+    margin-top: 1px;
+    color: #a765c4;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 25px;
+}
+
+.menuItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 13px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    color: #765987;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.menuItem i {
+    width: 18px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.menuItem:hover {
+    background: #f8edf5;
+    color: #8c4fb1;
+}
+
+.menuAtivo {
+    background: #eadcf2;
+    color: #704092;
+    font-weight: 600;
+}
+
+.menuAtivo:hover {
+    background: #eadcf2;
+    color: #704092;
+}
+
+.rodape {
+    margin-top: auto;
+    padding: 15px 8px 5px;
+    border-top: 1px solid #f0e4e9;
+}
+
+.rodape span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #a184ae;
+    font-size: 9px;
+}
+
+.rodape i {
+    color: #a765c4;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .sidebarAdm {
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .sidebarAdm {
+        position: relative;
+        width: 70px;
+        padding: 20px 8px;
+    }
+
+    .logo {
+        justify-content: center;
+        padding: 0 0 20px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo div {
+        display: none;
+    }
+
+    .menuItem {
+        justify-content: center;
+        padding: 12px 5px;
+    }
+
+    .menuItem span {
+        display: none;
+    }
+
+    .menuItem i {
+        font-size: 17px;
+    }
+
+    .rodape {
+        display: none;
+    }
+}
