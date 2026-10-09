@@ -38,7 +38,7 @@ function Sidebar() {
         </section>
 
         <nav className={styles.menu}>
-          <Link to="/"><i class="bi bi-house-door"></i> Inicio</Link>
+          <Link to="/Logado"><i class="bi bi-house-door"></i> Inicio</Link>
 
           <Link to="/perfil">
             <i className="bi bi-person-circle"></i> Perfil
@@ -60,9 +60,9 @@ function Sidebar() {
             <i className="bi bi-people"></i> Quero ser voluntário
           </Link>
           
-          <a href="#">
+          <Link to="/suporte">
             <i className="bi bi-headphones"></i> Suporte
-          </a>
+          </Link>
         </nav>
 <section className={styles.rodapeSidebar}>
 

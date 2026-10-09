@@ -14,7 +14,7 @@ import Login from "../Pages/Login/Login";
 import Cadastrar from "../Pages/Cadastre-se/Cadastrar";
 import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
 import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
-
+import Suporte from "../Pages/Suporte/Suporte"
 
 function AppRoutes() {
   return (
@@ -81,6 +81,10 @@ function AppRoutes() {
       <Route
         path="/esquecerSenha"
         element={<RecuperarSenha />}
+      />
+      <Route
+        path="/suporte"
+        element={<Suporte />}
       />
     </Routes>
   );

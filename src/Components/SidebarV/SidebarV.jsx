@@ -68,7 +68,7 @@ function SidebarV() {
             <i class="bi bi-calendar"></i> Agenda de consultas
           </Link>
 
-          <Link to="">
+          <Link to="/suporte">
             <i className="bi bi-headphones"></i> Suporte
           </Link>
         </nav>

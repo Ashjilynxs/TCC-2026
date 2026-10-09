@@ -60,9 +60,9 @@ function SidebarP() {
             <i className="bi bi-people"></i> Definir horários
           </Link>
 
-          <a href="#">
+          <Link to="/suporte">
             <i className="bi bi-headphones"></i> Suporte
-          </a>
+          </Link>
         </nav>
 <section className={styles.rodapeSidebar}>
 
