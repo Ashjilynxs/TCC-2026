@@ -16,6 +16,7 @@ import RecuperarSenha from "../Pages/RecuperarSenha/RecuperarSenha";
 import DashboardPsi from "../Pages/DashboardPsi/DashboardPsi";
 import Suporte from "../Pages/Suporte/Suporte";
 import Sobre_nos from "../Pages/Sobre_nos/Sobre_nos";
+import Agenda_psicologo from "../Pages/Agenda_psicologo/Agenda_psicologo";
 
 function AppRoutes() {
   return (
@@ -88,9 +89,13 @@ function AppRoutes() {
         element={<Suporte />}
       />
       <Route
-          path="/sobre_nos"
-          element={<Sobre_nos />}
-        />
+        path="/sobre_nos"
+        element={<Sobre_nos />}
+      />
+      <Route
+        path="/agenda_psicologo"
+        element={<Agenda_psicologo />}
+      />
     </Routes>
   );
 }

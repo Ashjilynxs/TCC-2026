@@ -64,7 +64,7 @@ function SidebarV() {
             <i class="bi bi-book"></i> Cursos Profissionalizantes
           </Link>
           
-          <Link to="">
+          <Link to="/agenda_psicologo">
             <i class="bi bi-calendar"></i> Agenda de consultas
           </Link>
 
