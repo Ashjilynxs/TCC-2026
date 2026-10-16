@@ -1,0 +1,360 @@
+
+.pagina {
+  min-height: 100vh;
+  background-color: #F8E8EE;
+  padding: 20px 40px 70px;
+  box-sizing: border-box;
+  color: #40224F;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #7A5A9A;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* GALERIA */
+
+.imagemPrincipal {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.imagemPrincipal > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favorito {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  color: #9B72CF;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #00000020;
+}
+
+.miniaturas {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.miniatura {
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.miniaturaAtiva {
+  border-color: #9B72CF;
+}
+
+.miniatura img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* INFORMAÇÕES */
+
+.classificacao {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.categoria {
+  background-color: #F1D9F5;
+  color: #9B72CF;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.avaliacao i {
+  color: #FFB900;
+}
+
+.avaliacao span {
+  color: #9D90A8;
+}
+
+.informacoes h1 {
+  font-size: 29px;
+  margin: 8px 0;
+  color: #40224F;
+}
+
+.preco {
+  font-size: 24px;
+  color: #9B72CF;
+  margin: 8px 0 24px;
+}
+
+/* VENDEDORA */
+
+.vendedora {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #E6C7D1;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.dadosVendedora {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dadosVendedora img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dadosVendedora > i {
+  font-size: 38px;
+  color: #9B72CF;
+}
+
+.textoVendedora strong {
+  display: block;
+  font-size: 14px;
+}
+
+.textoVendedora small {
+  display: block;
+  color: #A293B1;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.textoVendedora small i {
+  color: #3498FF;
+  margin-right: 5px;
+}
+
+.chat {
+  border: none;
+  background: transparent;
+  color: #9B72CF;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* COMPRA */
+
+.comprar {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #E7C6D4;
+  border-radius: 30px;
+  min-width: 110px;
+}
+
+.quantidade button {
+  border: none;
+  background: transparent;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: #40224F;
+  font-size: 17px;
+}
+
+.quantidade span {
+  font-weight: bold;
+}
+
+.adicionar {
+  flex: 1;
+  border: none;
+  border-radius: 30px;
+  background-color: #C79BDD;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.adicionar:hover {
+  background-color: #9B72CF;
+}
+
+.mensagem {
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background-color: #F0DEF4;
+  color: #7A5A9A;
+  font-size: 13px;
+}
+
+/* BOTÕES EXTRAS */
+
+.botoesExtras {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #E6C7D1;
+}
+
+.botoesExtras button {
+  flex: 1;
+  border: 1px solid #E6C7D1;
+  border-radius: 30px;
+  background: transparent;
+  padding: 10px;
+  color: #7A5A9A;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* DESCRIÇÃO */
+
+.descricao {
+  padding-top: 20px;
+}
+
+.descricao h3 {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.descricao p {
+  color: #7A5A9A;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.beneficios span {
+  font-size: 12px;
+  color: #8D7A99;
+}
+
+.beneficios i {
+  color: #C79BDD;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/* GARANTIAS */
+
+.garantias {
+  margin-top: 35px;
+}
+
+.garantias p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #8D7A99;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.garantias p:nth-child(1) i {
+  color: #17BA9B;
+}
+
+.garantias p:nth-child(2) i {
+  color: #FF9C25;
+}
+
+.garantias p:nth-child(3) i {
+  color: #528AFF;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comprar {
+    flex-direction: column;
+  }
+
+  .botoesExtras {
+    flex-direction: column;
+  }
+
+  .informacoes h1 {
+    font-size: 24px;
+  }
+}

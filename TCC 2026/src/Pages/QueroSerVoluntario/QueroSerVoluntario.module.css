@@ -1,0 +1,366 @@
+.container {
+  margin-left: 200px;
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+
+.banner h2 {
+  padding-top: 60px;
+}
+
+.banner {
+  background-color: #E4BCC9;
+  min-height: 250px;
+  text-align: center;
+  padding: 0 20px 30px;
+}
+
+.banner h2 {
+  margin: 0;
+  padding-top: 60px;
+  font-weight: bold;
+  color: #4A2D6B;
+}
+
+.banner p {
+  max-width: 750px;
+  margin: 15px auto 0;
+  font-size: 16px;
+  color: #7A5A9A;
+}
+
+.beneficios {
+  color: #4A2D6B;
+}
+
+.beneficios h3 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.beneficioItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.beneficioItem i {
+  color: #7A5A9A;
+  font-size: 18px;
+  min-width: 25px;
+}
+
+.beneficioItem p {
+  margin: 0;
+  color: #7A5A9A;
+  font-size: 14px;
+}
+
+.formulario {
+  background-color: white;
+  border: 1px solid #E2CAD2;
+  border-radius: 20px;
+  padding: 30px;
+  color: #4A2D6B;
+}
+
+.formulario h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.subtitulo {
+  color: #7A5A9A;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.etapas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.etapas>i {
+  color: #4A2D6B;
+  font-size: 11px;
+}
+
+.etapa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.etapa p {
+  margin: 0;
+  font-size: 13px;
+  color: #7A5A9A;
+  white-space: nowrap;
+}
+
+.etapa span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #7A5A9A;
+  color: white;
+  font-weight: bold;
+}
+
+.ativa {
+  background-color: #4A2D6B !important;
+  color: white !important;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 15px;
+  margin-top: 25px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label,
+.sobre label {
+  color: #7A5A9A;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #FBEFF3;
+  border: 1px solid #E8B8C9;
+  border-radius: 10px;
+  outline: none;
+  color: #4A2D6B;
+}
+
+.campo input:focus,
+.campo select:focus,
+.sobre textarea:focus {
+  border-color: #9B72CF;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.sobre textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  background-color: #FBEFF3;
+  border: 1px solid #E8B8C9;
+  border-radius: 10px;
+  outline: none;
+  color: #7A5A9A;
+}
+
+.continuar {
+  width: 100%;
+  margin-top: 30px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #7A5A9A;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continuar:hover {
+  background-color: #4A2D6B;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.voltar,
+.proximo {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.voltar {
+  background-color: white;
+  border: 1px solid #9B72CF;
+  color: #9B72CF;
+}
+
+.voltar:hover {
+  background-color: #FBEFF3;
+}
+
+.proximo {
+  background-color: #9B72CF;
+  border: 1px solid #9B72CF;
+  color: white;
+}
+
+.proximo:hover {
+  background-color: #7A5A9A;
+}
+
+@media (max-width: 1100px) {
+  .etapas {
+    gap: 8px 10px;
+  }
+
+  .etapa p {
+    font-size: 11px;
+  }
+
+  .etapa span {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .formulario {
+    padding: 25px;
+  }
+
+  .campos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 80px;
+    margin-left: 0;
+    padding-bottom: 40px;
+  }
+
+  .banner {
+    min-height: 180px;
+    padding: 35px 20px;
+  }
+
+  .banner h2 {
+    padding-top: 0;
+    font-size: 27px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+
+  .formulario {
+    padding: 20px;
+  }
+
+  .etapas {
+    justify-content: center;
+    gap: 6px 10px;
+  }
+
+  .etapa {
+    gap: 4px;
+  }
+
+  .etapa p {
+    font-size: 10px;
+  }
+
+  .etapa span {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .campos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .campo input,
+  .campo select,
+  .sobre textarea {
+    font-size: 16px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .voltar,
+  .proximo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 0;
+    padding: 30px 15px;
+  }
+
+  .banner h2 {
+    font-size: 23px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .formulario {
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  .etapas {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .etapa p {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+  }
+
+  .sobre textarea {
+    height: 90px;
+  }
+}

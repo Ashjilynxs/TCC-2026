@@ -1,0 +1,137 @@
+.pagina {
+  min-height: 100vh;
+  margin-left: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #FBEFF3;
+  color: #4A2D6B;
+  min-width: 0;
+}
+
+/* Navbar admin alinhada ao conteúdo (padrão DashboardADM) */
+@media (min-width: 769px) {
+  .pagina > nav {
+    width: auto;
+    margin: -30px -30px 30px;
+  }
+}
+
+.titulo h1 {
+  margin: 0;
+  color: #7A5A9A;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.titulo p {
+  color: #4A2D6B;
+  font-size: 15px;
+}
+
+.ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.tabela {
+  width: 100%;
+  background: #E2CAD2;
+  border: 1px solid #E2CAD2;
+  border-radius: 15px;
+  overflow-x: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho,
+.linha {
+  display: grid;
+  grid-template-columns: 1.7fr 1.4fr 1.4fr 0.8fr;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  min-width: 720px;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  background: #E4BCC9;
+  color: #4A2D6B;
+  border-bottom: 1px solid #E2CAD2;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.linha:hover {
+  background: #FBEFF3;
+}
+
+.linha strong {
+  display: block;
+  color: #4A2D6B;
+  overflow-wrap: anywhere;
+}
+
+.linha small {
+  display: block;
+  margin-top: 5px;
+  color: #4A2D6B;
+  overflow-wrap: anywhere;
+}
+
+.linha > span {
+  color: #4A2D6B;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.ativo,
+.pendente,
+.inativo {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.ativo {
+  background: #FBEFF3;
+  color: #4A2D6B;
+  border: 1px solid #7A5A9A;
+}
+
+.pendente {
+  background: #E4BCC9;
+  color: #4A2D6B;
+  border: 1px solid #7A5A9A;
+}
+
+
+@media (max-width: 768px) {
+  .pagina {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+
+  .titulo h1 {
+    font-size: 23px;
+  }
+
+  .ferramentas {
+    flex-direction: column;
+  }
+
+  .ferramentas input,
+  .ferramentas select {
+    width: 100%;
+    max-width: none;
+  }
+
+  .cabecalho,
+  .linha {
+    padding: 15px;
+  }
+}

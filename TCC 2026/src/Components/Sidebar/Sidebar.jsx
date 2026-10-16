@@ -1,10 +1,71 @@
-import styles from "./Sidebar.module.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 
+import styles from "./Sidebar.module.css";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Sidebar() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [nomeUsuario, setNomeUsuario] = useState("");
+  const location = useLocation();
+
+  const classeAtiva = (caminho) =>
+    location.pathname === caminho ? styles.menuAtivo : "";
+
+  useEffect(() => {
+    let ativo = true;
+
+    async function carregarUsuario() {
+      try {
+        const resposta = await fetch(
+          "http://localhost:8080/usuarios/me",
+          {
+            credentials: "include",
+            headers: {
+              Accept: "application/json",
+            },
+          }
+        );
+
+        const tipo =
+          resposta.headers.get("content-type") || "";
+
+        if (
+          !resposta.ok ||
+          !tipo.includes("application/json")
+        ) {
+          throw new Error(
+            "Não foi possível carregar o usuário. Verifique sua sessão."
+          );
+        }
+
+        const usuario = await resposta.json();
+
+        if (!ativo) return;
+
+        setNomeUsuario(usuario.nome || "");
+
+      } catch (erro) {
+        console.error("Erro ao buscar usuário:", erro);
+      }
+    }
+
+    carregarUsuario();
+
+    // Atualizar Sidebar depois de salvar o Perfil
+    window.addEventListener(
+      "usuarioAtualizado",
+      carregarUsuario
+    );
+
+    return () => {
+      ativo = false;
+
+      window.removeEventListener(
+        "usuarioAtualizado",
+        carregarUsuario
+      );
+    };
+  }, []);
 
   return (
     <>
@@ -20,10 +81,9 @@ function Sidebar() {
           menuAberto ? styles.aberto : ""
         }`}
       >
-
         <section className={styles.logo}>
           <div className={styles.logoIcon}>
-            <Link to="/">
+            <Link to="/Logado">
               <img
                 src="/logoIR1.png"
                 alt="Logo Instituto Recomeçar"
@@ -38,65 +98,51 @@ function Sidebar() {
         </section>
 
         <nav className={styles.menu}>
-          <Link to="/"><i class="bi bi-house-door"></i> Inicio</Link>
+          <Link to="/Logado" className={classeAtiva("/Logado")}>
+            <i className="bi bi-house-door"></i> Inicio
+          </Link>
 
-          <Link to="/perfil">
+          <Link to="/perfil" className={classeAtiva("/perfil")}>
             <i className="bi bi-person-circle"></i> Perfil
           </Link>
 
-          <a href="#">
-            <i class="bi bi-cart"></i> Carrinho
-          </a>
+          <Link to="/carrinho" className={classeAtiva("/carrinho")}>
+            <i className="bi bi-cart"></i> Carrinho
+          </Link>
 
-          <a href="#">
-            <i class="bi bi-cart-plus"></i> Catálogo
-          </a>
+          <Link to="/catalogo" className={classeAtiva("/catalogo")}>
+            <i className="bi bi-cart-plus"></i> Catálogo
+          </Link>
 
-          <a href="#">
+          <Link to="/meusPedidos" className={classeAtiva("/meusPedidos")}>
             <i className="bi bi-box-seam"></i> Meus pedidos
-          </a>
+          </Link>
 
-          <a href="#">
+          <Link to="/qSvoluntario" className={classeAtiva("/qSvoluntario")}>
             <i className="bi bi-people"></i> Quero ser voluntário
-          </a>
+          </Link>
 
-          <a href="#">
-            <i className="bi bi-chat"></i> Mensagens
-          </a>
-
-          <a href="#">
+          <Link to="/suporte" className={classeAtiva("/suporte")}>
             <i className="bi bi-headphones"></i> Suporte
-          </a>
+          </Link>
         </nav>
-<section className={styles.rodapeSidebar}>
 
-  <button className={styles.botaoSair}>
-    <i className="bi bi-box-arrow-left"></i>
-    Sair
-  </button>
+        <section className={styles.rodapeSidebar}>
+          <button className={styles.botaoSair}>
+            <i className="bi bi-box-arrow-left"></i>
+            <Link to="/"> Sair</Link>
+          </button>
 
-  <div className={styles.usuario}>
+          <div className={styles.usuario}>
+            <i className="bi bi-person-circle"></i>
 
-    <img
-      src="/ana.jpg"
-      alt="Ana Paula"
-      className={styles.fotoUsuario}
-    />
-
-    <div className={styles.dadosUsuario}>
-      <span className={styles.nomeUsuario}>
-        Ana Paula
-      </span>
-
-      <span className={styles.tipoUsuario}>
-        Empreendedora
-      </span>
-    </div>
-
-  </div>
-
-</section>
-
+            <div className={styles.dadosUsuario}>
+              <span className={styles.nomeUsuario}>
+                {nomeUsuario}
+              </span>
+            </div>
+          </div>
+        </section>
       </aside>
     </>
   );

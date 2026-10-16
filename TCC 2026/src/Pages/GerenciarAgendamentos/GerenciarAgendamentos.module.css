@@ -1,0 +1,362 @@
+
+.pagina {
+  margin-left: 200px;
+  background-color: #FBEFF3;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  color: #40224F;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.cabecalho p {
+  margin-top: 6px;
+  color: #7A5A9A;
+  font-size: 13px;
+}
+
+.botaoAgenda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #9B72CF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botaoAgenda:hover {
+  background-color: #855DBB;
+}
+
+.listaConsultas h2 {
+  color: #40224F;
+  font-size: 19px;
+  margin: 0 0 20px;
+}
+
+.cardConsulta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #F0D8E1;
+  border: 1px solid #EAC3D0;
+  border-radius: 12px;
+}
+
+.paciente {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8E8EE;
+  color: #9B72CF;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.dadosPaciente h3 {
+  margin: 0 0 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #40224F;
+}
+
+.dataHorario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  color: #7A5A9A;
+  font-size: 12px;
+}
+
+.dataHorario span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.confirmado {
+  background-color: #E5FFF0;
+  color: #078D4C;
+}
+
+.pendente {
+  background-color: #FFF3D9;
+  color: #B87800;
+}
+
+.cancelado {
+  background-color: #FFE4E8;
+  color: #B83D58;
+}
+
+.botaoConfirmar,
+.botaoCancelar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.botaoConfirmar {
+  background-color: #9B72CF;
+  border: 1px solid #9B72CF;
+  color: white;
+}
+
+.botaoConfirmar:hover {
+  background-color: #855DBB;
+}
+
+.botaoCancelar {
+  background-color: #FFF4F7;
+  border: 1px solid #E7CAD5;
+  color: #9B4264;
+}
+
+.botaoCancelar:hover {
+  background-color: #FFE5ED;
+}
+
+.semConsultas {
+  color: #7A5A9A;
+  font-size: 14px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #000000b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: #FFF3F7;
+  border: 1px solid #E7CAD5;
+  border-radius: 12px;
+  padding: 23px;
+  box-shadow: 0 12px 35px #00000030;
+}
+
+.modalCabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 27px;
+}
+
+.modalCabecalho h2 {
+  margin: 0 0 6px;
+  color: #40224F;
+  font-size: 17px;
+}
+
+.modalCabecalho p {
+  margin: 0;
+  color: #7A5A9A;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.fechar {
+  border: none;
+  background: transparent;
+  color: #7A5A9A;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.campo {
+  margin-bottom: 23px;
+}
+
+.campo > label {
+  display: block;
+  color: #40224F;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.diasGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+
+.opcaoDia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #40224F;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.opcaoDia input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #C79BDD;
+  cursor: pointer;
+}
+
+.horariosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.campo select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #E7CAD5;
+  border-radius: 10px;
+  background-color: #FFF3F7;
+  color: #40224F;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.campo select:focus {
+  border-color: #9B72CF;
+}
+
+.modalRodape {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.botaoVoltar,
+.botaoSalvar {
+  padding: 11px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.botaoVoltar {
+  background-color: transparent;
+  border: 1px solid #E7CAD5;
+  color: #40224F;
+}
+
+.botaoSalvar {
+  background-color: #9B72CF;
+  border: 1px solid #9B72CF;
+  color: white;
+  font-weight: 600;
+}
+
+.botaoSalvar:hover {
+  background-color: #855DBB;
+}
+
+.mensagemErro {
+  color: #B83D58;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .pagina {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  .cardConsulta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acoes {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .diasGrid,
+  .horariosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .modalRodape {
+    flex-direction: column;
+  }
+
+  .botaoVoltar,
+  .botaoSalvar {
+    width: 100%;
+  }
+}

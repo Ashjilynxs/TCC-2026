@@ -1,0 +1,121 @@
+.container {
+   margin-left: 200px;
+  padding: 0 40px;
+  background-color: #FBEFF3;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.titulo h1 {
+    color: #7A5A9A;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.titulo p {
+    color: #4A2D6B;
+    font-size: 17px;
+}
+
+h2 {
+    color: #7A5A9A;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 420px));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #E2CAD2;
+    box-shadow: 0 2px 8px rgba(120, 70, 140, 0.08);
+    color: #4A2D6B;
+}
+
+
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #7A5A9A;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.especialidade {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card span {
+    display: inline-block;
+    background: #E2CAD2;
+    color: #7A5A9A;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin: 12px 0 15px;
+}
+
+.botao {
+    width: 100%;
+    background: #7A5A9A;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao:hover {
+    background: #4A2D6B;
+}
+
+@media (max-width: 850px) {
+
+    .container {
+        margin-left: 190px;
+        padding: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px) {
+
+    .container {
+        margin-left: 0;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+}

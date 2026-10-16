@@ -1,0 +1,280 @@
+.container {
+ margin-left: 200px;
+ padding: 35px;
+ background-color: #FBEFF3;
+
+}
+
+/* Navbar admin alinhada ao conteúdo (padrão DashboardADM) */
+@media (min-width: 769px) {
+  .container > nav {
+    width: auto;
+    margin: -35px -35px 35px;
+  }
+}
+
+.topo {
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-bottom:35px;
+}
+
+
+.topo h1 {
+ color:#7A5A9A;
+ font-size:28px;
+ font-weight: bold;
+}
+
+.topo p {
+ color:#4A2D6B;
+ margin-top:5px;
+}
+
+.botaoNovo {
+
+ background:#9B72CF;
+ color:white;
+
+ border:none;
+ border-radius:30px;
+
+ padding:14px 25px;
+
+ font-size:14px;
+
+ display:flex;
+ align-items:center;
+ gap:10px;
+
+ cursor:pointer;
+}
+
+
+
+.cards {
+
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:22px;
+
+}
+
+
+
+.card {
+
+ background:#F3DDE6;
+
+ border-radius:18px;
+
+ text-align:center;
+
+ padding-top:35px;
+
+ overflow:hidden;
+
+ box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+.avatar {
+
+ width:75px;
+ height:75px;
+
+ border-radius:50%;
+
+ object-fit:cover;
+
+ border:3px solid white;
+
+}
+
+
+
+.card h2 {
+
+ color:#40224F;
+
+ font-size:17px;
+
+ margin:15px 0 5px;
+
+}
+
+
+
+.area {
+
+ color:#80658F;
+
+ font-size:13px;
+
+ display:block;
+
+}
+
+
+
+.verificado,
+.pendente {
+
+ margin:18px auto;
+
+ display:block;
+
+ font-size:12px;
+
+}
+
+
+
+.verificado {
+
+ color:#40224F;
+
+}
+
+
+
+.pendente {
+
+ background:#F2D9E8;
+
+ width:max-content;
+
+ padding:5px 15px;
+
+ border-radius:20px;
+
+}
+
+
+
+.infos {
+
+ border-top:1px solid #E2CAD2;
+
+ display:flex;
+
+ justify-content:space-around;
+
+ padding:25px 10px;
+
+}
+
+
+
+.infos div {
+
+ display:flex;
+
+ flex-direction:column;
+
+ gap:5px;
+
+}
+
+
+
+.infos small {
+
+ color:#80658F;
+
+ font-size:11px;
+
+}
+
+
+
+.infos strong {
+
+ color:#40224F;
+
+ font-size:18px;
+
+}
+
+
+
+.card footer {
+
+ background:#F7E8EF;
+
+ display:flex;
+
+ justify-content:space-around;
+
+ padding:18px;
+
+}
+
+
+
+.card footer button {
+
+ border:none;
+
+ background:none;
+
+ color:#40224F;
+
+ cursor:pointer;
+
+}
+
+
+
+.card .remover {
+
+ color:#E96778;
+
+}
+
+
+
+@media(max-width:1000px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.container{
+
+margin-left:0;
+
+padding:80px 20px 20px;
+
+}
+
+
+.topo{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}

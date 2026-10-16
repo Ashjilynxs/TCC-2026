@@ -1,0 +1,331 @@
+
+.main {
+  margin-left: 200px;
+  min-height: 100vh;
+  padding: 35px 40px 60px;
+  background-color: #F8E8EE;
+  box-sizing: border-box;
+}
+
+/* Navbar admin alinhada ao conteúdo (padrão DashboardADM) */
+@media (min-width: 769px) {
+  .main > nav {
+    width: auto;
+    margin: -35px -40px 35px;
+  }
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #40224F;
+}
+
+.cabecalho p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #7A5A9A;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seletorMes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 25px;
+  color: #40224F;
+}
+
+.seletorMes input {
+  width: 130px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #40224F;
+  font-size: 13px;
+}
+
+.exportar {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #C99BDA;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.exportar:hover {
+  background-color: #9B72CF;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.tabelaContainer {
+  min-height: 445px;
+  background-color: #F0D9E2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabelaScroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela thead {
+  background-color: #EBD2E0;
+}
+
+.tabela th {
+  padding: 17px 15px;
+  color: #7A5A9A;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.tabela td {
+  padding: 17px 15px;
+  border-bottom: 1px solid #E5C7D5;
+  color: #40224F;
+  font-size: 12px;
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela td strong {
+  font-size: 12px;
+}
+
+.tabela td small {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #7A5A9A;
+}
+
+.comissao {
+  color: #009D46 !important;
+  font-weight: bold;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.concluido {
+  color: #40224F;
+}
+
+.processando {
+  border: 1px solid #E2C6D6;
+  color: #40224F;
+}
+
+.cancelado {
+  background-color: #E64B50;
+  color: white;
+}
+
+.resumo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardFaturamento,
+.cardReceita {
+  min-height: 120px;
+  padding: 22px;
+  border-radius: 12px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.cardFaturamento {
+  background-color: #C99BDA;
+}
+
+.cardReceita {
+  background-color: #9870CD;
+}
+
+.cardTopo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardTopo span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cardTopo i {
+  font-size: 16px;
+}
+
+.cardFaturamento h2,
+.cardReceita h2 {
+  margin: 12px 0 8px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cardFaturamento p,
+.cardReceita p {
+  margin: 0;
+  font-size: 12px;
+  color: #F8E8EE;
+}
+
+.cardVendedoras {
+  padding: 22px;
+  border-radius: 12px;
+  background-color: #F0D9E2;
+}
+
+.cardVendedoras h3 {
+  margin: 0 0 22px;
+  color: #40224F;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.vendedora {
+  margin-bottom: 20px;
+}
+
+.vendedora:last-child {
+  margin-bottom: 0;
+}
+
+.vendedoraInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #40224F;
+  font-size: 12px;
+}
+
+.vendedoraInfo strong {
+  white-space: nowrap;
+}
+
+.barraFundo {
+  width: 100%;
+  height: 4px;
+  background-color: #E4C2D9;
+  overflow: hidden;
+}
+
+.barraProgresso {
+  height: 100%;
+  background-color: #C990DD;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    padding: 30px 25px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resumo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cardVendedoras {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    padding: 90px 20px 40px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .acoes {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .resumo {
+    grid-template-columns: 1fr;
+  }
+
+  .cardVendedoras {
+    grid-column: auto;
+  }
+
+  .tabela {
+    min-width: 650px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho h1 {
+    font-size: 21px;
+  }
+
+  .acoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .seletorMes,
+  .exportar {
+    width: 100%;
+    justify-content: center;
+  }
+}

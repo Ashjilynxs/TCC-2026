@@ -1,34 +1,32 @@
 .sidebar {
-  width: 200px;
-  height: 100vh;
- position: fixed;
-  background-color: #F8E8EE;
-  border-right: 1px solid #E2CAD2;
+  position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #E2CAD2;
+    width: 200px;
+    height: 100vh;
+   background-color: #F8E8EE;
+  
 }
-
-
 .logo {
   height: 110px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
-
   gap: 10px;
   padding: 0 15px;
-
   border-bottom: 1px solid #E8C8D5;
 }
 
 .logoIcon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   flex-shrink: 0;
 }
 
 .logoIcon img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 
@@ -38,44 +36,47 @@
 
   font-size: 13px;
   font-weight: bold;
-  color: #40224F;
+  color: #4A2D6B;
 }
 
 .logoTexto span {
-  color: #9B72CF;
+  color: #7A5A9A;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-
   padding: 15px 12px;
   gap: 8px;
-  ;
 }
 
 .menu a {
   display: block;
-
   padding: 10px 15px;
-
-  color: #6F4695;
+  color: #4A2D6B;
   text-decoration: none;
   font-size: 14px;
 }
 
 .menu a:hover{
-  background-color: #9B72CF;
+  background-color: #7A5A9A;
   color: white;
   padding: 10px 10px;
   border-radius: 50px;
+}
+
+.menu a.menuAtivo {
+  background-color: #7A5A9A;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
 }
 
 .rodapeSidebar {
   position: absolute;
   bottom: 0;
 
-  width: 100%;
+  width: 200px;
 
   border-top: 1px solid #E2CAD2;
   padding: 12px;
@@ -113,7 +114,7 @@
   border-radius: 50%;
   object-fit: cover;
 
-  border: 1px solid #9B72CF;
+  border: 1px solid #7A5A9A;
 }
 
 .dadosUsuario {
@@ -128,43 +129,35 @@
 }
 
 .tipoUsuario {
-  color: #9B72CF;
+  color: #7A5A9A;
   font-size: 9px;
   margin-top: 2px;
 }
 .hamburguer {
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .hamburguer {
     display: block;
-
     position: fixed;
     top: 15px;
     left: 15px;
-
     background: transparent;
     border: none;
-
     font-size: 30px;
     color: #4A2D6B;
-
     cursor: pointer;
     z-index: 1001;
   }
 
   .sidebar {
     position: fixed;
-
     top: 0;
     left: -300px;
-
     width: 280px;
     height: 100vh;
-
     transition: left 0.3s ease;
-
     z-index: 1000;
   }
 

@@ -1,356 +1,224 @@
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import styles from "./DashboardLogado.module.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { listaProdutos } from "../../shared/produtos";
 
 function DashboardLogado() {
-  
+
+  const produtos = listaProdutos.slice(0, 3);
   return (
     <>
-    <Sidebar /> 
-    <section className={styles.main}> 
-    <div className={styles.areaCompras}>
-      <div className={styles.texto}>
-        Bem-vinda!
-        <span> Área de compras</span>
-      </div>
-      <div className={styles.button}>
-        <button className={styles.carrinho}><i className="bi bi-cart"></i> Carrinho</button>
-        <button className={styles.empreender}>Começe a empreender</button>
-      </div>
-    </div>
-    </section>
-    
-    <section className={styles.estatisticas}>
 
-  <div className={styles.card}>
-    <i className="bi bi-bag"></i>
-    <h6>8</h6>
-    <p>Pedidos realizados</p>
-  </div>
+      <Sidebar />
+      <main className={styles.main}>
+        <section className={styles.header}>
+          <div className={`d-flex justify-content-between ${styles.areaCompras}`}>
+            <div className={styles.texto}>
+              Bem-vindo (a)!
+              <span> Área de compras</span>
+            </div>
+            <div className={styles.button}>
+              <button className={styles.carrinho}><Link to="/carrinho"><i className="bi bi-cart"></i> Carrinho</Link></button>
+              <button className={styles.empreender}><Link to="/comeceEmpreender">Começe a empreender</Link></button>
+            </div>
+          </div>
+        </section>
 
-  <div className={styles.card}>
-    <i className="bi bi-box-seam"></i>
-    <h6>1</h6>
-    <p>Em trânsito</p>
-  </div>
+        <section className={styles.estatisticas}>
 
-  <div className={styles.card}>
-    <i className="bi bi-heart"></i>
-    <h6>3</h6>
-    <p>Favoritos</p>
-  </div>
+          <div className={styles.card}>
+            <i className="bi bi-bag"></i>
+            <h6>8</h6>
+            <p>Pedidos realizados</p>
+          </div>
 
-</section>
-<section className={styles.favoritosRankingCatalogo}> 
-<section className={styles.favoritos}>
-  <div className={styles.linha1}>
-    <i className="bi bi-heart"></i> Favoritos
-    <div className={styles.verTodos}>
-    <a href="#">Ver mais produtos <i class="bi bi-arrow-right"></i></a>
-    </div>
-  
-  </div>
+          <div className={styles.card}>
+            <i className="bi bi-box-seam"></i>
+            <h6>1</h6>
+            <p>Em trânsito</p>
+          </div>
 
-  <div className={styles.linha2}>
-  <div className={styles.cardFavorito}>
 
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
 
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
+        </section>
+        <section className={styles.RankingCatalogo}>
 
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
+          <section className={` ${styles.ranking}`}>
+            <div className={styles.tituloRanking}>
+              <i className="bi bi-trophy"></i> Ranking de vendedoras
+            </div>
+            <div className={styles.listaRanking}>
+              <div className={`d-flex justify-content-between ${styles.cardRanking}`}>
+                <div className="d-flex gap-3 align-items-center">
+                  <span className={` ${styles.medalha1}`}><i className="bi bi-award"></i></span>
+                  
+                  <img
+                    src="/Fernanda.jpg"
+                    alt="Bordado Floral"
+                    className={styles.imagemFavorito}
+                  />
 
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
+                  <div className={styles.infoRanking}>
+                    <span className={styles.vendedoraRanking}>Fernanda Lima</span>
+                  </div>
+                </div>
 
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
+                <div className={styles.detalhesRanking}>
 
-  </div>
+                  <span className={styles.avaliacaoRanking}>
+                    <i className="bi bi-star-fill"></i> 4.9
+                  </span>
+                </div>
 
-  <div className={styles.cardFavorito}>
+              </div>
+            </div>
 
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
+            <div className={styles.listaRanking}>
+              <div className={`d-flex justify-content-between ${styles.cardRanking}`}>
+                <div className="d-flex gap-3 align-items-center">
+                <span className={styles.medalha2}><i class="bi bi-award"></i></span>
+                <img
+                  src="/Ana silva.jpg"
+                  alt="Bordado Floral"
+                  className={styles.imagemFavorito}
+                />
 
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
+                <div className={styles.infoRanking}>
+                  <span className={styles.vendedoraRanking}>Ana Silva</span>
+                </div>
+                </div>
 
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
+                <div className={styles.detalhesRanking}>
+                  <span className={styles.avaliacaoRanking}>
+                    <i className="bi bi-star-fill"></i> 4.4
+                  </span>
+                </div>
 
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
+              </div>
+            </div>
 
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
+            <div className={styles.listaRanking}>
+             <div className={`d-flex justify-content-between ${styles.cardRanking}`}>
+                <div className="d-flex gap-3 align-items-center">
+                <span className={styles.medalha3}><i class="bi bi-award"></i></span>
+                <img
+                  src="/Juliana.webp"
+                  alt="Bordado Floral"
+                  className={styles.imagemFavorito}
+                />
 
-  </div>
+                <div className={styles.infoRanking}>
+                  <span className={styles.vendedoraRanking}>Juliana Souza</span>
+                </div>
+                </div>
 
-  <div className={styles.cardFavorito}>
+                <div className={styles.detalhesRanking}>
+                  <span className={styles.avaliacaoRanking}>
+                    <i className="bi bi-star-fill"></i> 4.1
+                  </span>
+                </div>
 
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
+              </div>
+            </div>
 
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
+            <div className={styles.listaRanking}>
+              <div className={`d-flex justify-content-between ${styles.cardRanking}`}>
+                <div className="d-flex gap-3 align-items-center">
+                <span className={styles.medalha}>4°</span>
+                <img
+                  src="/Adriana.jpg"
+                  alt="Bordado Floral"
+                  className={styles.imagemFavorito}
+                />
 
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
+                <div className={styles.infoRanking}>
+                  <span className={styles.vendedoraRanking}>Adriana Gimenes</span>
+                </div>
+                </div>
 
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
+                <div className={styles.detalhesRanking}>
+                  <span className={styles.avaliacaoRanking}>
+                    <i className="bi bi-star-fill"></i> 3.9
+                  </span>
+                </div>
 
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
+              </div>
+            </div>
 
-  </div>
+            <div className={styles.listaRanking}>
+              <div className={`d-flex justify-content-between ${styles.cardRanking}`}>
+                <div className="d-flex gap-3 align-items-center">
+                <span className={styles.medalha}>5°</span>
+                <img
+                  src="/Heloisa.jpe"
+                  alt="Bordado Floral"
+                  className={styles.imagemFavorito}
+                />
 
-  <div className={styles.cardFavorito}>
+                <div className={styles.infoRanking}>
+                  <span className={styles.vendedoraRanking}>Heloisa Queiroz</span>
+                </div>
+                </div>
 
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
+                <div className={styles.detalhesRanking}>
+                  <span className={styles.avaliacaoRanking}>
+                    <i className="bi bi-star-fill"></i> 3.7
+                  </span>
+                </div>
 
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
+              </div>
+            </div>
+          </section>
+        </section>
 
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
+        <section className={styles.catalogo}>
+          <div className={styles.tituloCatalogo}><i class="bi bi-cart-plus"></i> Catálogo
+            <div className={styles.verMais}><Link to="/catalogo">Ver mais <i class="bi bi-arrow-right"></i></Link></div>
+          </div>
+          <div className={styles.listaCatalogo}>
+            <div className="container text-center">
+              <div className="row">
+                {produtos.map((produto) => (
+                  <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div className={styles.cardProduto} >
+                      <div className={styles.areaImg}>
+                        <img src={produto.image} className="card-img-top" alt="..." />
 
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
+                        <span className={styles.etiqueta}>
+                          {produto.etiqueta}
+                        </span>
+                      </div>
+                      <div className={styles.cardBody}>
+                        <h5 className={styles.cardTitle}>{produto.nome}</h5>
+                        <div className={styles.cardText}>
+                          <div className={styles.vendedoraNome}>
+                            <img src={produto.vendedoraImage} alt="." /><p>{produto.vendedora}</p>
+                          </div>
 
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
+                          <div className={styles.detalhesProdutos}>
+                            <span className={styles.preco}>R$ {produto.preco.toFixed(2)}</span>
 
-  </div>
+                            <span className={styles.avaliacao}>
+                              <i className="bi bi-star-fill"></i> {produto.avaliacao}
+                            </span>
+                          </div>
+                        </div>
+                        <button className={styles.btn}>
+                          <Link to="#">Adicionar ao carrinho</Link>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )
+                )}
 
-  <div className={styles.cardFavorito}>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoFavorito}>
-      <span className={styles.nomeProduto}>Bordado Floral</span>
-
-      <span className={styles.vendedora}>
-        Fernanda Lima
-      </span>
-    </div>
-
-    <div className={styles.detalhesFavorito}>
-      <span className={styles.preco}>R$ 145,00</span>
-
-      <span className={styles.avaliacao}>
-        <i className="bi bi-star-fill"></i> 5
-      </span>
-    </div>
-
-  </div>
-</div>
-</section>
-
-<section className={styles.ranking}>
-    <div className={styles.tituloRanking}>
-      <i className="bi bi-trophy"></i> Ranking de vendedoras
-    </div>
-    <div className={styles.listaRanking}>
-      <div className={styles.cardRanking}>
-<span className={styles.medalha1}><i class="bi bi-award"></i></span>
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoRanking}>
-      <span className={styles.vendedoraRanking}>Fernanda Lima</span>
-    </div>
-
-    <div className={styles.detalhesRanking}>
-          <span className={styles.avaliacaoRanking}>
-        <i className="bi bi-star-fill"></i> 4.9
-      </span>
-    </div>
-
-  </div>
-    </div>
-
-    <div className={styles.listaRanking}>
-      <div className={styles.cardRanking}>
-<span className={styles.medalha2}><i class="bi bi-award"></i></span>
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoRanking}>
-      <span className={styles.vendedoraRanking}>Ana Silva</span>
-    </div>
-
-    <div className={styles.detalhesRanking}>
-          <span className={styles.avaliacaoRanking}>
-        <i className="bi bi-star-fill"></i> 4.4
-      </span>
-    </div>
-
-  </div>
-    </div>
-
-    <div className={styles.listaRanking}>
-      <div className={styles.cardRanking}>
-<span className={styles.medalha3}><i class="bi bi-award"></i></span>
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoRanking}>
-      <span className={styles.vendedoraRanking}>Juliana Souza</span>
-    </div>
-
-    <div className={styles.detalhesRanking}>
-          <span className={styles.avaliacaoRanking}>
-        <i className="bi bi-star-fill"></i> 4.1
-      </span>
-    </div>
-
-  </div>
-    </div>
-
-    <div className={styles.listaRanking}>
-      <div className={styles.cardRanking}>
-<span className={styles.medalha}>4°</span>
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoRanking}>
-      <span className={styles.vendedoraRanking}>Adriana Gimenes</span>
-    </div>
-
-    <div className={styles.detalhesRanking}>
-          <span className={styles.avaliacaoRanking}>
-        <i className="bi bi-star-fill"></i> 3.9
-      </span>
-    </div>
-
-  </div>
-    </div>
-
-    <div className={styles.listaRanking}>
-      <div className={styles.cardRanking}>
-<span className={styles.medalha}>5°</span>
-    <img
-      src="/bordado.jpg"
-      alt="Bordado Floral"
-      className={styles.imagemFavorito}
-    />
-
-    <div className={styles.infoRanking}>
-      <span className={styles.vendedoraRanking}>Heloisa Queiroz</span>
-    </div>
-
-    <div className={styles.detalhesRanking}>
-          <span className={styles.avaliacaoRanking}>
-        <i className="bi bi-star-fill"></i> 3.7
-      </span>
-    </div>
-
-  </div>
-    </div>
-</section>
-    </section>
-
-    <section className={styles.catalogo}>
-      <div className={styles.tituloCatalogo}><i class="bi bi-cart-plus"></i> Catálogo
-      <div className={styles.verMais}>Ver mais <i class="bi bi-arrow-right"></i></div>
-</div>
-      <div className={styles.listaCatalogo}>
-        <div className="container text-center">
-  <div className="row">
-    <div className="col">
-      
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Bordado floral</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-    </div>
-    <div className="col">
-      
-      <div className={styles.card} style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-    </div>
-    
-  </div>
-</div>
-      </div>
-    </section>
-    
-  </>
+    </>
   );
 }
 
