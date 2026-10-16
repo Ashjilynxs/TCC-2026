@@ -14,6 +14,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.intercept.AuthorizationFilter;
 
+import java.util.Locale;
+
 import jakarta.servlet.http.HttpServletResponse;
 
 @Configuration
@@ -111,7 +113,7 @@ public class SecurityConfig {
                      * devolve a mensagem específica para orientar a usuária */
                     if (exception instanceof org.springframework.security.authentication.DisabledException
                             && exception.getMessage() != null
-                            && exception.getMessage().contains("e-mail")) {
+                            && exception.getMessage().toLowerCase(Locale.ROOT).contains("e-mail")) {
                         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                         response.setContentType("application/json");
                         response.getWriter().write("{\"error\": \""
